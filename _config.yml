@@ -1,6 +1,6 @@
 # Site settings
 title: stjepco
-email: your-email@domain.com
+email: grgic.stjepan@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Awesome stjepco's web site 
 baseurl: "" # the subpath of your site, e.g. /blog/
