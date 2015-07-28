@@ -11,20 +11,3 @@ github_username:  stjepco
 # Build settings
 markdown: kramdown
 
-# gems:
-#   - jekyll-sitemap
-
-# defaults:
-#   -
-#     scope:
-#       path: ""
-#       type: "posts"
-#       author: Stjepan Grgic
-#     values:
-#       layout: "posts"
-#   -
-#     scope:
-#       path: ""
-#       type: "pages"
-#     values:
-#       layout: "page"
