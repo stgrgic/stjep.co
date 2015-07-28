@@ -3,13 +3,28 @@ title: stjepco
 email: grgic.stjepan@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Awesome stjepco's web site 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://stjep.co" # the base hostname & protocol for your site
+baseurl: ""
+url: "http://stjep.co"
 twitter_username: stjepco
 github_username:  stjepco
 
 # Build settings
 markdown: kramdown
 
-gems:
-  - jekyll-sitemap
+# gems:
+#   - jekyll-sitemap
+
+# defaults:
+#   -
+#     scope:
+#       path: ""
+#       type: "posts"
+#       author: Stjepan Grgic
+#     values:
+#       layout: "posts"
+#   -
+#     scope:
+#       path: ""
+#       type: "pages"
+#     values:
+#       layout: "page"
