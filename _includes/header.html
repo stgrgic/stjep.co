@@ -1,20 +1,18 @@
-<header class="site-header">  
-  <div class="wrapper">
-    <h1 class="site-title" >
-      <a href="{{ site.baseurl }}/">Hi, I am stjepco<!-- {{ site.title }} --></a>
-    </h1>
-    <p class="sub-head">DESIGNER<i class="dot"></i>CODER<i class="dot"></i>RARE UNICORN</p>
-<!--     <nav class="navbar" role="navigation">
-      <ul class="nav">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <li class="nav__item">
-            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </nav> -->
+<header class="site-header">
+  <div class="menu-icon"></div>
+  <a class="site-title" href="{{ site.baseurl }}/">Hi i am stjepco</a>
+  <a href="/hire">Hire me</a>
 
-  </div>
+   <nav class="side-nav">
+     {% capture location %}
+      {{ page.url | remove_first:'/' | split:'/' | first }}
+     {% endcapture %}
+     <ul class="">
+      <li><a href="/about/" {% if location == 'about' %}class="active" {% endif %} >About</a></li>
+      <li><a href="/work/" {% if location == 'work' %}class="active" {% endif %} >Work</a></li>
+      <li><a href="/blog/" {% if location == 'blog' %}class="active" {% endif %} >Blog</a></li>
+      <li><a href="">Contact</a></li>
+     </ul>
+   </nav>
+
 </header>
