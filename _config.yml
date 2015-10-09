@@ -1,19 +1,19 @@
 # stjep.co settings
-title:              stjepco
-email:              grgic.stjepan@gmail.com
+title: stjepco
+email: grgic.stjepan@gmail.com
 
-baseurl:            ""
-url:                "http://stjep.co"
+baseurl: ""
+url: "http://stjep.co"
 
-permalink:           "/blog/:title/"
+permalink: "/blog/:title/"
 
 # paginate:            5
 # paginate_path:       "/blog/page:num/"
 
-include:             ["_pages"]
-# relative_permalinks: false
+include: ["_pages"]
 
-
+exclude: ["gulpfile.js", "Gemfile", "Gemfile.lock",
+          "package.json", "README.md", "LICENSE", "node_modules"]
 
 
 collections:
