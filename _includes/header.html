@@ -1,18 +1,21 @@
-<header class="site-header">
+<header class="main-header wrap">
   <div class="menu-icon"></div>
-  <a class="site-title" href="{{ site.baseurl }}/">Hi i am stjepco</a>
-  <a href="/hire">Hire me</a>
+  <a class="hi" href="{{ site.baseurl }}/">
+    <h1>Hi, I am <b>stjepco</b></h1>
+    <p class="sub">Designer <i class="and">&</i>Coder</p>
+  </a>
+  <a href="/hire" class="hire">Hire me</a>
 
-   <nav class="side-nav">
-     {% capture location %}
+  <nav class="side-nav">
+    {% capture location %}
       {{ page.url | remove_first:'/' | split:'/' | first }}
-     {% endcapture %}
-     <ul class="">
+    {% endcapture %}
+    <ul class="">
       <li><a href="/about/" {% if location == 'about' %}class="active" {% endif %} >About</a></li>
       <li><a href="/work/" {% if location == 'work' %}class="active" {% endif %} >Work</a></li>
       <li><a href="/blog/" {% if location == 'blog' %}class="active" {% endif %} >Blog</a></li>
       <li><a href="">Contact</a></li>
-     </ul>
-   </nav>
+    </ul>
+  </nav>
 
 </header>

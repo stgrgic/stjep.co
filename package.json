@@ -21,6 +21,8 @@
     "gulp-autoprefixer": "^3.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.1.0",
-    "run-sequence": "^1.1.4"
+    "normalize-styl": "^3.0.3",
+    "run-sequence": "^1.1.4",
+    "rupture": "^0.6.1"
   }
 }
