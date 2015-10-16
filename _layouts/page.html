@@ -3,10 +3,22 @@ layout: default
 date: 2015-10-10
 ---
 <div class="page">
-  <div class="page__wrap">
-    <h1 class="page__title">{{ page.title }}</h1>
-    {{ content }}
-    <p class="date">Last edit on {{ page.date | date: '%B %d, %Y' }}</p>
+<div class="logo">
+  <div class="bc bc__1">
+    <div class="sc"></div>
   </div>
+  <div class="bc bc__2">
+    <div class="sc"></div>
+  </div>
+</div>
+  <header>
+    <!-- <span class="up-title">Toughts</span> -->
+    <h1 class="page__title">{{ page.title }}</h1>
+  </header>
+
+  <article>
+    {{ content }}
+  </article>
+  <p class="date">Last edit on {{ page.date | date: '%B %d, %Y' }}</p>
 </div>
 

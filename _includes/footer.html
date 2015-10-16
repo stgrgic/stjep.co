@@ -1,3 +1,10 @@
 <footer>
-  footer
+  <ul class="footer-nav">
+    <li><a href="/"      {% if page.url == '/' %} class="active" {% endif %}>Home</a></li>
+    <li><a href="/about/"{% if page.url == '/about/' %}class="active" {% endif %} >About</a></li>
+    <li><a href="/work/" {% if page.url == '/work/' %}class="active" {% endif %} >Work</a></li>
+    <li><a href="/blog/" {% if page.url == '/Blog/' %}class="active" {% endif %} >Blog</a></li>
+    <li><a href="/contact/">Contact</a></li>
+  </ul>
+  <b>designed</b> & <b>coded</b> by <a href="http://stjep.co/">stjepco</a>
 </footer>

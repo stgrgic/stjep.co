@@ -1,0 +1,30 @@
+
+<nav class="navbar">
+  <div class="navbar__wrap">
+    <div class="menu-icon">
+      <svg viewBox="0 0 28 18">
+        <path class="hamburger" d="M0,16h20v2H0V16z M0,8h28v2H0V8z M0,0h23v2H0V0z"/>
+      </svg>
+      <span>Menu</span>
+    </div>
+    <a href="/hire" class="hire">Hire me</a>
+    <div class="nav-pop-up">
+      <ul class="main-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/"{% if page.url == '/about/' %}class="active" {% endif %} >About</a></li>
+        <li><a href="/work/" {% if page.url == '/work/' %}class="active" {% endif %} >Work</a></li>
+        <li><a href="/blog/" {% if page.url == '/Blog/' %}class="active" {% endif %} >Blog</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <ul class="links">
+        <li><a href="" class="linkedin">LinkedIn</a></li>
+        <li><a href="" class="twitter">Twiter</a></li>
+        <li><a href="" class="github">Github</a></li>
+        <!-- <li><a href="" class="facebook">Facebook</a></li> -->
+        <!-- <li><a href="" class="instagram">Instagram</a></li> -->
+        <li><a href="" class="behance">Behance</a></li>
+        <li><a href="" class="dribble">Dribble</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

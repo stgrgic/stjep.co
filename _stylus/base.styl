@@ -1,51 +1,74 @@
 //Base
+rupture.base-font-size = 10px
+rupture.mobile-cutoff = 890px
+// rupture.enable-em-breakpoints = true
+
+html
+    font-size: 62.5%
+    +below(360px)
+        font-size 50%
+
+html,body
+    height 100%
 
 body
-    background-color #FAFAFA
+    position relative
+    background-color #FCF9F7
     color $text
-    
-    font-family "Source Sans Pro", Arial, Helvetica, sans-serif
-    // font-family: 'Martel Sans', sans-serif;
-    // font-family: 'Martel', serif;
+
+    font-family "Source Sans Pro", Helvetica, Arial, sans-serif
     font-weight 400
-    
-    font-size 18px
+
+    font-size 1.8rem
     line-height 1.5
-    
+
     -webkit-font-smoothing antialiased
     -moz-osx-font-smoothing grayscale
 
     text-rendering geometricPrecision
-    
-    letter-spacing -0.007em
-    
+
+    // letter-spacing -0.03rem
+
 
 a
     color $link
     display inline-block
     position relative
-    transition all 0.1s ease-in-out
+    transition all 0.2s ease
     font-weight 600
+    &:before
+        content ''
+        width 100%
+        height 0.1rem
+        position absolute
+        left 0
+        bottom .1rem
+        background-color $link
+        transition all 0.15s ease
     &:hover
-        text-decoration underline
         color $link-hover
-        
+        &:before
+            bottom -0.2rem
+
+
+
 
 
 
 
 
 h1,h2,h3,h4,h5,h6
-    font-weight 200
-    color $heading
-        
-h1
-    font-size 52px
-    letter-spacing -0.03em
-h2
-    font-size 42px
-h3
-    font-size 32px
+    // font-weight 200
+    // color $heading
+    line-height 1.25
+
+// h1
+//     font-size 52px
+//     letter-spacing -0.03em
+// h2
+//     font-size 42px
+// h3
+//     font-size 32px
     // font-weight 700
     // color #333
 
@@ -56,7 +79,7 @@ p
     // font-family: 'Source Serif Pro', serif;
     // font-size 17px
     // line-height 35px
-        
+
 
 
 
@@ -68,7 +91,7 @@ code {
     font-size: 15px;
     border: 1px solid #ddd;
     border-radius: 3px;
-    background-color: #fdfdfd;
+    // background-color: #fdfdfd;
 }
 
 code {
@@ -86,7 +109,7 @@ pre {
     }
 }
 
-/* Solarized Light 
+/* Solarized Light
 For use with Jekyll and Pygments
 http://ethanschoonover.com/solarized
 SOLARIZED HEX      ROLE
