@@ -5,8 +5,13 @@
 @import 'partials/home.styl'
 
 //Elements
-@import 'partials/navbar.styl'
+@import 'partials/nav.styl'
 @import 'partials/footer.styl'
+
+@import 'partials/pages.styl'
+@import 'partials/posts.styl'
+
+@import 'partials/card.styl'
 
 //Other
 @import 'partials/buttons.styl'
@@ -18,36 +23,8 @@
     color: $text-grey;
     line-height 1.25
     font-weight 200
-
-
-.page
-    wrap()
-    header
-        text-align center
-        display flex
-        height 37rem
-        justify-content center
-        align-items center
-    &__title
-        font-size 5.2rem
-        max-width 54rem
-        line-height 1
-        margin 0 auto
-    article
-        & > *:not(.highlight)
-            w(65rem)
-            padding-bottom 3rem
-        h2
-            padding-top 5rem
-            font-size 3.8rem
-            font-weight 700
-            text-align center
-
-        .highlight
-            w(77rem)
-            margin-bottom 3rem
-
-
+    text-align center
+    margin-bottom 50px
 
 .divider
     text-align center
@@ -62,9 +39,9 @@
             width 2rem
             height 23rem
 
-.section-title
-    text-align center
-    margin-bottom 50px
+
+
+
 .work
     wrap()
     // margin-bottom 300px
@@ -77,77 +54,25 @@
             margin-left 3rem
         svg
             height 3rem
+            width 3rem
     .icon
         &.be
             // background-color #afa
-            transform scale(0.92)
+            // transform scale(0.92)
+            svg
+                width 4rem
         &:before
             display none
         &:hover
-            // transform scale(1.12)
+            transform scale(1.12)
         &__path
             fill $link
 
+.writings
+    wrap()
 
-.card
-    background-color #fff
-    border: .1rem solid #DADADA;
-    box-shadow: 0px .2rem .6rem 0px rgba(17,23,54,0.05);
-    border-radius: .2rem;
-    display block
-    cf()
-    w(77rem)
-    height 30rem
-    position relative
-    // &:not(:last-child)
-    margin-bottom 40px
 
-    &__img
-        // width 100%
-        // max-width 30rem
-        // height 27rem
-        width 42.857142857%
-        height 100%
-        background-color #aaa
-        float left
 
-    &__wrap
-        // background-color #afa
-        float left
-        width 42.857142857%
-        height 100%
-        position relative
-        margin-left 7.792207792%
-        .tag
-            font-size: 1.5rem;
-            color: $text-grey;
-            position absolute
-            top 3.1rem
-            left 0
-            text-transform uppercase
-            // line-height: 19px;
-        .title-desc
-            position absolute
-            bottom 8.4rem
-            left 0
-            .title
-                font-size 3.2rem
-                line-height 1.1
-                font-weight 700
-                letter-spacing -0.03em
-                +below(670px)
-                    font-size 2.8rem
-            .description
-                line-height 1.2
-                letter-spacing -0.03em
-                margin-top 1rem
-                +below(670px)
-                    font-size 1.6rem
-        .read-more
-            position absolute
-            bottom 1.3rem
-            left 0
-            // margin-bottom 10px
 
 //
 

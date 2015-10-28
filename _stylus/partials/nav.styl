@@ -1,0 +1,166 @@
+//Navbar
+
+.navbar
+    position fixed
+    z-index 999
+    bottom 3rem
+    left 0px
+    right 0px
+    padding 0 3rem
+    +below(820px)
+        padding 0 1rem
+        bottom 1rem
+
+    // box-shadow 0px .2rem .8rem 0px rgba(0,0,0,0.10)
+    &__wrap
+        max-width 117rem
+        margin 0 auto
+        padding 0 3rem
+        height 7.5rem
+        position relative
+
+        +below(670px)
+            height 6.5rem
+            padding 0 1rem
+
+
+        background-color #fff
+        // background-color $link
+        border-radius 0.2rem;
+        box-shadow 0px .2rem .8rem 0px rgba(0,0,0,0.20)
+
+        display flex
+        justify-content space-between
+        align-items center
+        .hire
+            margin-left auto
+
+    // &__shadow
+    //     //
+
+    .menu-icon
+        font-size 2rem
+        font-weight 600
+        cursor pointer
+        user-select none
+        cf()
+        span
+            line-height 1
+            float left
+            position relative
+            top -0.2rem
+            margin-left 1.2rem
+            // vertical-align middle
+            // display inline-block
+        svg
+            float left
+            width 2.8rem
+            height 1.8rem
+            // display inline-block
+        .hamburger
+            fill $link
+
+    .nav-pop-up
+        display none
+        // background-color #ccc
+        width 100%
+        position fixed
+
+        left 0
+        right 0
+        top 0
+        bottom 6.5rem
+        padding 3rem 3rem
+        +below(820px)
+            padding 1rem 1rem
+            // bottom 6.5rem
+
+        z-index -1
+
+        .nav-icon
+            width 3rem
+            height 3rem
+            fill $link
+            margin-right 3rem
+
+        &__wrap
+            background-color #fff
+            box-shadow 0px .2rem .8rem 0px rgba(0,0,0,0.10)
+            height 100%
+            // max-height 70rem
+            width 100%
+            // background-color #afa
+            max-width 117rem
+            margin 0 auto
+            position absolute
+            bottom 0
+            left 50%
+            top 3rem
+            transform translateX(-50%)
+            display flex
+            align-items center
+            flex-wrap wrap
+            +below(1230px)
+                // bottom auto
+                // display block
+                left 3rem
+                right 3rem
+                width auto
+                transform none
+            +below(820px)
+                left 1rem
+                right 1rem
+                top 1rem
+        a
+            &:before
+                display none
+
+        ul.main-nav
+            padding 3rem 0 4rem
+            height 90%
+            max-height 70rem
+            width 100%
+            // position absolute
+            // top 50%
+            // transform translateY(-50%)
+            li
+                position relative
+                height calc(100% / 6)
+                // background-color #afa
+            > li
+                // background-color #faa
+                display flex
+                align-items center
+                margin-left 10%
+                > a
+                    font-weight 200
+                    font-size: 5.2rem
+                    color $text
+                    +below(820px)
+                        font-size 4rem
+                    +mobile(orientation: landscape)
+                        font-size 3rem
+                    // line-height: 1.8
+                    &:hover
+                        transform translateX(2rem)
+
+        ul.soc-links
+            padding-top 2rem
+            display flex
+            align-items center
+            margin-left 3rem
+            li
+                display inline-block
+            .slink
+                width 3rem
+                height 3rem
+                fill $text
+                // line-height 1
+
+                margin-right 2.5rem
+
+                &:hover
+                    transform scale(1.12)
+                    fill $link
+                &.be
+                    width 4rem
