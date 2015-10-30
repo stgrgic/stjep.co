@@ -23,7 +23,7 @@ gulp.task('stylus', function () {
 
 //Watching on stylus files
 gulp.task('watch', function(){
-  gulp.watch('./_stylus/**/*.styl', ['stylus']); 
+  gulp.watch('./_stylus/**/*.styl', ['stylus']);
 })
 
 //Default task
