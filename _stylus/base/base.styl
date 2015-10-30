@@ -1,0 +1,101 @@
+//Base
+rupture.base-font-size = 10px
+rupture.mobile-cutoff = 890px
+// rupture.enable-em-breakpoints = true
+
+html
+    font-size: 62.5%
+    +below(360px)
+        font-size 50%
+
+html,body
+    height 100%
+
+body
+    position relative
+    background-color #fff
+    color $text
+    //
+    font-family "Source Sans Pro", Helvetica, Arial, sans-serif
+    font-weight 400
+
+    font-size 1.9rem
+    line-height 1.5
+
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+
+    text-rendering geometricPrecision
+
+    // letter-spacing -0.03rem
+
+
+a
+    // color $link
+    // display inline-block
+    position relative
+    transition all 0.2s ease
+    // font-weight 600
+    &:link
+        color $link
+    &:visited
+        color #B36D59
+    // &:before
+    //     content ''
+    //     width 100%
+    //     height 0.1rem
+    //     position absolute
+    //     left 0
+    //     bottom .1rem
+    //     background-color $link
+    //     transition all 0.15s ease
+    // &:hover
+    //     color $link-hover
+    //     &:before
+    //         bottom -0.2rem
+    &.more
+        margin-right 20px
+        position relative
+        display inline-block
+        &:after
+            content "→"
+            position absolute
+            display block
+            right -2rem
+            bottom 0rem
+            transition all 0.15s ease
+        &:hover
+            &:after
+                right -2.8rem
+
+
+
+
+
+
+
+
+
+h1,h2,h3,h4,h5,h6
+    // font-weight 200
+    color $heading
+    letter-spacing -0.03em
+    // line-height 1.25
+
+// h1
+//     font-size 52px
+//     letter-spacing -0.03em
+// h2
+//     font-size 42px
+// h3
+//     font-size 32px
+    // font-weight 700
+    // color #333
+
+p
+    // font-family: 'Merriweather', serif;
+    // font-family: 'Merriweather Sans', sans-serif;
+    // font-weight 600
+    // font-family: 'Source Serif Pro', serif;
+    // font-size 17px
+    // line-height 35px

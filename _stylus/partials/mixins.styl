@@ -1,10 +1,5 @@
 //Mixins
 
-rw770()
-    width 100%
-    max-width 770px
-    margin 0 auto
-
 w(n)
     width 100%
     max-width n
@@ -12,8 +7,19 @@ w(n)
 
 //Wrap - adds pading on mobile sizes
 wrap()
-    // width 100%
-    // max-width 830px
-    // margin 0 auto
-    padding 0 2rem
-    // height 100%
+    padding 0 3%
+
+
+// from http://nicolasgallagher.com/micro-clearfix-hack/
+cf()
+  &:before
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+paddingTop()
+    padding-top 19rem
+    +below(700px)
+        padding-top 8rem

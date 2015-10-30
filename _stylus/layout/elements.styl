@@ -1,30 +1,7 @@
-//First import Mixins
-@import 'partials/mixins.styl'
-
-//Pages
-@import 'partials/home.styl'
-
-//Elements
-@import 'partials/nav.styl'
-@import 'partials/footer.styl'
-
-@import 'partials/pages.styl'
-@import 'partials/posts.styl'
-
-@import 'partials/card.styl'
-
-//Other
-@import 'partials/buttons.styl'
-
-// @import 'partials/card.styl'
-
 .section-title
-    font-size: 4.2rem;
-    color: $text-grey;
-    line-height 1.25
-    font-weight 200
-    text-align center
-    margin-bottom 50px
+    font-size 3.2rem
+    color $medium-grey
+    font-weight 300
 
 .divider
     text-align center
@@ -41,35 +18,16 @@
 
 
 
+.icon
+    display inline-block
+    fill $link
+    &:hover
+        transform scale(1.12)
+    svg
+        width 3rem
+        height 3rem
 
-.work
-    wrap()
-    // margin-bottom 300px
-    .find-more
-        text-align center
-        a
-            display inline-block
-            vertical-align middle
-            height 3rem
-            margin-left 3rem
-        svg
-            height 3rem
-            width 3rem
-    .icon
-        &.be
-            // background-color #afa
-            // transform scale(0.92)
-            svg
-                width 4rem
-        &:before
-            display none
-        &:hover
-            transform scale(1.12)
-        &__path
-            fill $link
 
-.writings
-    wrap()
 
 
 
