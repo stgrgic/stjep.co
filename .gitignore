@@ -5,7 +5,6 @@ _site
 
 ##
 node_modules
-assets/css/*.css
 
 # OS generated files #
 .DS_Store

@@ -2,7 +2,7 @@
 title: stjep.co
 email: grgic.stjepan@gmail.com
 
-# baseurl: ""
+baseurl: ""
 url: "http://stjep.co"
 
 permalink: "/blog/:title/"
