@@ -32,7 +32,7 @@ header.main
                 left 0
                 top -3rem
     p
-        max-width 50%
+        max-width 70%
         +below(700px)
             max-width 100%
 
@@ -42,32 +42,37 @@ header.main
     // background-color #ffa
     // paddingTop()
     padding-top 12rem
+    +below(890px)
+        padding-top 8rem
+
     w(97rem)
     header
-        display flex
-        align-items baseline
-        flex-wrap wrap
+        // display flex
+        // align-items baseline
+        // flex-wrap wrap
         margin-bottom 4rem
-        aside
+    aside
+        // display inline-block
+        // margin-left auto
+        text-align center
+        margin 0 auto
+        align-items center
+        // display flex
+        +below(450px)
+            margin-left 0
+        p, ul, ul li
             display inline-block
-            margin-left auto
-            align-items center
-            display flex
-            +below(450px)
-                margin-left 0
-            p, ul, ul li
-                display inline-block
-                line-height 1
-            p
-                color $medium-grey
-                font-weight 300
-            ul
-                vertical-align middle
-                margin-left 3rem
-                li:first-of-type
-                    margin-right 3rem
-            .be svg
-                width 4rem
+            line-height 1
+        p
+            color $medium-grey
+            font-weight 300
+        ul
+            vertical-align middle
+            margin-left 3rem
+            li:first-of-type
+                margin-right 3rem
+        .be svg
+            width 4rem
     .case-list
         // background-color #aff
         .case
@@ -95,7 +100,7 @@ header.main
                     background-size 90%
                     background-position -15rem 2rem
                 +below(600px)
-                    background-position -15rem 12rem
+                    background-position -8rem 12rem
 
             &.istra
                 background-color #fff
@@ -104,6 +109,7 @@ header.main
                 background-position 50% 50%
                 .case__tags, .case__title
                     color #fff
+                    text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
 
             .wrap
                 text-align right
