@@ -3,6 +3,7 @@ var stylus = require('gulp-stylus');
 var autoprefixer = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
+var gutil = require('gulp-util');
 
 //Stylus compile, autoprefix & rename
 gulp.task('stylus', function () {
@@ -10,6 +11,7 @@ gulp.task('stylus', function () {
     .pipe(stylus({
       compress: true
     }))
+    .on('error', errorHandler('stylus error'))
     .pipe(autoprefixer({
         browsers: ['last 2 versions'],
         cascade: false
@@ -32,3 +34,10 @@ gulp.task('default', function (callback) {
     callback
   )
 })
+
+var errorHandler = function (title) {
+  return function(err) {
+    gutil.log(gutil.colors.red('[' + title + ']'), err.toString());
+    this.emit('end');
+  };
+};
