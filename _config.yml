@@ -1,31 +1,14 @@
 # stjep.co settings
 title: stjep.co
-email: grgic.stjepan@gmail.com
 
 baseurl: ""
 url: "http://stjep.co"
 
-permalink: "/blog/:title/"
-
-# paginate:            5
-# paginate_path:       "/blog/page:num/"
+# Build settings
+markdown: kramdown
 
 include: ["_pages"]
 
 exclude: ["gulpfile.js", "Gemfile", "Gemfile.lock",
           "package.json", "README.md", "LICENSE", "node_modules"]
 
-
-collections:
-  works:
-    output: true
-    permalink: /work/:title/
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "Stjepan Grgic"

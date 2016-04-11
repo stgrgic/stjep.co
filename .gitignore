@@ -5,6 +5,7 @@ _site
 
 ##
 node_modules
+bower_components
 
 # OS generated files #
 .DS_Store

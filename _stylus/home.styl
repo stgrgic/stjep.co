@@ -1,0 +1,75 @@
+//Home
+
+header
+    margin-bottom 40rem
+    h1
+        font-size 48rem
+        line-height 1.4
+        letter-spacing -0.3rem
+        color $h
+        .hi
+            font-weight 300
+            font-size 34rem
+            display block
+            opacity 0.5
+    p
+        font-size 24rem
+        font-weight 400
+        letter-spacing -0.1rem
+        color $h
+        line-height 1
+
+article
+    max-width 600rem
+    .text
+        font-size 24px
+        font-weight 200 !important
+        font-style italic !important
+    p
+        margin-bottom 30rem
+    
+h2
+    font-weight 300
+    font-size 34rem
+    padding 20rem 0rem
+    opacity 0.5
+
+.work
+    .shots
+        display flex
+        flex-wrap wrap
+        margin 0rem -10rem
+        
+        li, a
+            display block
+            // float left
+            // clear both
+        img
+            // width 270rem
+            width 100%
+            border: 1px solid rgba(0,0,0,0.10);
+            transition all .2s ease
+            float left
+            
+        li
+            // margin-bottom 20px
+            // width 33.333333%
+            // float left
+            padding 10rem
+            // float left
+            width 33.333333%
+            +below(600px)
+                width 50%
+            +below(400px)
+                width 100%
+            a
+                //
+                
+            &:hover img
+                // /* unused-icons_1x: */
+                // border: 1px solid rgba(0,0,0,0.10);
+                // float left
+                display block
+                box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);
+                transform translateY(-5rem)
+    

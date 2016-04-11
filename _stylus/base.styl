@@ -1,0 +1,49 @@
+//Base
+// rupture.base-font-size = 10px
+
+html
+    font-size: 1px
+    //Chrome has bug with percent based font size on root element
+        
+    +below(360px)
+        font-size 0.8px
+
+body
+    // position relative
+    background-color $bg
+    color $text
+
+    // font-family "jaf-facitweb", Helvetica, Arial, sans-serif
+    // font-family Arial, sans-serif !important
+    // font-weight 400
+    font-family: 'Fira Sans', sans-serif;
+
+    font-size 18rem
+    line-height 1.7
+
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+
+    text-rendering geometricPrecision
+
+    // letter-spacing -0.03rem
+
+p
+    font-weight 300
+    letter-spacing -0.2rem
+    line-height 2
+    // opacity 0.8
+    // color $text
+    
+.page-content
+    max-width 870rem
+    width 100%
+    margin 0 auto
+    padding 80rem 15rem 0
+
+a
+    color $link
+    font-weight 400
+    font-style italic
+
+
