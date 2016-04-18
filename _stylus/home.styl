@@ -1,30 +1,29 @@
 //Home
 
 img
-    width 41px
-    height 42px
-    margin-bottom 400px
-
-// hr
-//     width 30rem
-//     border-bottom 2px solid $text
+    width 4.1rem
+    height 4.2rem
 
 header
-    margin-bottom 40px
+    margin 30rem 0 4rem
+    +below(600px)
+        margin-top 25rem
+        
+    +tablet(orientation: landscape)
+        margin-top 20rem
+    +mobile(orientation: landscape)
+        margin-top 5rem
     h1
-        font-size 52px
+        font-size 5.2rem
         line-height 1.4
-        letter-spacing -0.3px
-        // color $h
+        letter-spacing -0.03rem
+    
+    +below(800px)
+        h1
+            font-size 4.3rem
 
 article
-    // max-width 600px
-    // margin 0 auto
-    // .text
-    //     font-size 24px
-    //     font-weight 200
-    //     font-style italic
     p
-        margin-bottom 30px
-    margin-bottom 100px
+        margin-bottom 3.0rem
+
     
