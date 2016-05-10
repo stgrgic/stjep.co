@@ -23,6 +23,10 @@ body
 
     text-rendering geometricPrecision
     margin 80px 30px
+    
+    opacity 1
+    transition opacity 0.4s ease
+
     +below(1000px)
         margin 8% 3%
     +below(600px)
@@ -41,10 +45,13 @@ body
 
 a
     color $link
-    display inline-block
     transition all 0.15s ease-in
     position relative
+    white-space nowrap
     &:hover
         color $link-hover
 
 
+.wf-loading
+    body
+        opacity 0
