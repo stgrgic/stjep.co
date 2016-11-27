@@ -1,0 +1,12 @@
+---
+layout: page
+permalink: /lab/
+---
+
+<h1>Lab</h1>
+<p>collection of excersises</p>
+
+
+{% for lab in site.lab %}
+    <a href="{{ lab.url }}">{{ lab.title }}</a>
+{% endfor %}

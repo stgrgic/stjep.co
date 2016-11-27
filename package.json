@@ -1,8 +1,8 @@
 {
   "name": "stjepco.github.io",
   "version": "1.0.0",
-  "description": "stjep.co website",
-  "main": "index.js",
+  "description": "Stjepan Grgic personal website",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,23 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/stjepco/stjepco.github.io.git"
   },
+  "keywords": [
+    "Stjepan",
+    "Grgic"
+  ],
   "author": "Stjepan Grgic",
-  "license": "GNU GENERAL PUBLIC LICENSE Version 2",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/stjepco/stjepco.github.io/issues"
   },
-  "homepage": "https://github.com/stjepco/stjepco.github.io#readme",
-  "devDependencies": {
-    "del": "^2.2.0",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-stylus": "^2.1.0",
-    "gulp-util": "^3.0.7",
-    "jeet": "^6.1.2",
-    "nib": "^1.1.0",
-    "normalize-styl": "^3.0.3",
-    "run-sequence": "^1.1.4",
-    "rupture": "^0.6.1"
-  }
+  "homepage": "https://github.com/stjepco/stjepco.github.io#readme"
 }
