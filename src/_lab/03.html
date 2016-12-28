@@ -1,0 +1,328 @@
+---
+layout: lab
+title: 03 - D3 test
+class: lab-03
+---
+
+<h1>D3 test</h1>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<!-- <script src="./../assets/js/d3.min.js"></script> -->
+
+<script>
+
+
+// var dataset = [];                         //Initialize empty array
+// for (var i = 0; i < 25; i++) {            //Loop 25 times
+//     var newNumber = Math.random() * 30;   //New random number (0-30)
+//     dataset.push(newNumber);              //Add new number to array
+// }
+
+
+
+
+
+// Barchart example
+//----------------------------------------------------
+  //  var svg_height = 100;
+  //  var svg_width = 500;
+  //
+  // var bar_padding = 2;
+  //
+  // var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
+  //     11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
+  //
+  //  var svg = d3.select("body")
+  //      .append("svg")
+  //      .attr("height", svg_height)
+  //      .attr("width", svg_width)
+  //
+  //  svg.selectAll("rect")
+  //      .data(dataset)
+  //      .enter()
+  //      .append("rect")
+  //      .attr("x", function (d, i) {
+  //          return i * (svg_width / dataset.length);
+  //      })
+  //      .attr("y", function (d) {
+  //          return svg_height - (d*4);
+  //      })
+  //      .attr("width", svg_width / dataset.length - bar_padding)
+  //      .attr("height", function (d) {
+  //          return d * 4;
+  //      })
+  //      .attr("fill", function (d) {
+  //          return ("rgb(0,0," + (d * 10)+")")
+  //      })
+  //
+  //  svg.selectAll("text")
+  //      .data(dataset)
+  //      .enter()
+  //      .append("text")
+  //      .text(function (d) {
+  //          return d
+  //      })
+  //      .attr("x", function (d, i) {
+  //          return i * (svg_width / dataset.length) + (svg_width / dataset.length) / 2;
+  //      })
+  //      .attr("y", function (d) {
+  //          return svg_height - (d * 4) + 14;
+  //      })
+  //      .attr("fill", "#fff")
+  //      .attr("font-style", "sans-serif")
+  //      .attr("font-size", "12px")
+  //      .attr("text-anchor", "middle")
+
+// Dots example
+//-----------------------------------
+
+   // var svg_height = 100;
+   // var svg_width = 500;
+   // var dataset = [
+   //     [ 5,     20 ],
+   //     [ 480,   90 ],
+   //     [ 250,   50 ],
+   //     [ 100,   33 ],
+   //     [ 330,   95 ],
+   //     [ 410,   12 ],
+   //     [ 475,   44 ],
+   //     [ 25,    67 ],
+   //     [ 85,    21 ],
+   //     [ 220,   88 ]
+   // ];
+   // var svg = d3.select("body")
+   //     .append("svg")
+   //     .attr("height", svg_height)
+   //     .attr("width", svg_width)
+   //
+   // svg.selectAll("circle")
+   //     .data(dataset)
+   //     .enter()
+   //     .append("circle")
+   //     // I dont know why this doesn't work
+   //     //        .attr({
+   //     //            cx: function(d) { return d[0] },
+   //     //            cy: function(d) { return d[1]},
+   //     //            r: 5
+   //     //        })
+   //     .attr("cx", function(d) {
+   //         return d[0];
+   //     })
+   //     .attr("cy", function(d) {
+   //         return d[1];
+   //     })
+   //     .attr("r", 5);
+
+
+ // Json my try
+//------------------------------------------
+
+// Load JSON file
+ // var json = d3.json("./../assets/data/03-benchmark.json", function(json) {
+ //    // console.log(json.benchmarks[0]);  //Log output to console
+ //    // console.log(json)
+ //
+ //    var dataset = [];
+ //
+ //    for (var i = 0; i < 252; i++) {
+ //        // console.log(json.benchmarks[i]);
+ //        if (json.benchmarks[i].cpu_time == undefined ) { break; }
+ //        // if (json.benchmarks[i].cpu_time) {
+ //        //     y.push(json.benchmarks[i].cpu_time);
+ //        // }
+ //        // x.push(i);
+ //        dataset.push(json.benchmarks[i].cpu_time);
+ //    }
+ //    console.log(dataset);
+ //    var svg_height = 293162;
+ //    var svg_width = 1000;
+ //
+ //    var svg = d3.select("body")
+ //        .append("svg")
+ //        .attr("height", svg_height)
+ //        .attr("width", svg_width);
+ //
+ //     svg.selectAll("rect")
+ //         .data(dataset)
+ //         .enter()
+ //         .append("rect")
+ //         .attr("x", function (d, i) {
+ //             return i*10;
+ //         })
+ //         .attr("y", function (d) {
+ //             return 0;
+ //         })
+ //         .attr("width", 8)
+ //         .attr("height", function (d) {
+ //             return d/199900
+ //         });
+ //
+ // });
+ //---------------------------------------------
+
+//Next from D3
+
+// var svg_height = 100;
+// var svg_width = 500;
+// var dataset = [
+//     [ 5,     20 ],
+//     [ 480,   90 ],
+//     [ 250,   50 ],
+//     [ 100,   33 ],
+//     [ 330,   95 ],
+//     [ 410,   12 ],
+//     [ 475,   44 ],
+//     [ 25,    67 ],
+//     [ 85,    21 ],
+//     [ 220,   88 ]
+// ];
+//
+// var svg = d3.select("body")
+//     .append("svg")
+//     .attr("height", svg_height)
+//     .attr("width", svg_width)
+//
+// svg.selectAll("circle")
+//     .data(dataset)
+//     .enter()
+//     .append("circle")
+//     .attr("cx", function(d) {
+//         return d[0];
+//     })
+//     .attr("cy", function(d) {
+//         return d[1];
+//     })
+//     .attr("r", function(d) {
+//         return Math.sqrt(svg_height - d[1])
+//     });
+//
+// svg.selectAll("text")
+//     .data(dataset)
+//     .enter()
+//     .append("text")
+//     .text(function(d) {
+//         return d[0] + "," + d[1];
+//     })
+//     .attr("x", function(d) {
+//         return d[0];
+//     })
+//     .attr("y", function(d) {
+//         return d[1];
+//     })
+//     .attr("font-family", "sans-serif")
+//     .attr("font-size", "11px")
+//     .attr("fill", "red");
+//----------------------------------
+
+// // Scales example
+//
+// // Proba skaliranja iz benchmarka
+// // var scale = d3.scale.linear()
+// //                     .domain([82, 234529372])
+// //                     .range([0,100])
+//
+// var svg_height = 300;
+// var svg_width = 800;
+//
+// var dataset = [
+//     [ 5,     20 ],
+//     [ 480,   90 ],
+//     [ 250,   50 ],
+//     [ 100,   33 ],
+//     [ 330,   95 ],
+//     [ 410,   12 ],
+//     [ 475,   44 ],
+//     [ 25,    67 ],
+//     [ 85,    21 ],
+//     [ 220,   88 ],
+//     [ 600,   150]
+// ];
+//
+// //Dynamic, random dataset
+// var dataset = [];
+// var numDataPoints = 50;
+// var xRange = Math.random() * 1000;
+// var yRange = Math.random() * 1000;
+// for (var i = 0; i < numDataPoints; i++) {
+//     var newNumber1 = Math.floor(Math.random() * xRange);
+//     var newNumber2 = Math.floor(Math.random() * yRange);
+//     dataset.push([newNumber1, newNumber2]);
+// }
+//
+// var padding = 30;
+//
+// var svg = d3.select(".lab-03")
+//     .append("svg")
+//     .attr("height", svg_height)
+//     .attr("width", svg_width)
+//
+// var xScale = d3.scaleLinear()
+//     .domain([0, d3.max(dataset, function(d) {return d[0]; })])
+//     .range([padding, svg_width-padding * 2])
+// var yScale = d3.scaleLinear()
+//     .domain([0, d3.max(dataset, function (d) {return d[1]; })])
+//     .range([svg_height - padding, padding])
+//
+// var rScale = d3.scaleLinear()
+//     .domain([0, d3.max(dataset, function (d) {return d[1]; })])
+//     .range([1, 8])
+//
+//
+//
+// svg.selectAll("circle")
+//     .data(dataset)
+//     .enter()
+//     .append("circle")
+//     .attr("cx", function(d) {
+//         return xScale(d[0]);
+//     })
+//     .attr("cy", function(d) {
+//         return yScale(d[1]);
+//     })
+//     .attr("r", function(d) {
+//         return rScale(d[1])
+//     });
+//
+//
+// // svg.selectAll("text")
+// //     .data(dataset)
+// //     .enter()
+// //     .append("text")
+// //     .text(function(d) {
+// //         return d[0] + "," + d[1];
+// //     })
+// //     .attr("x", function(d) {
+// //         return xScale(d[0]);
+// //     })
+// //     .attr("y", function(d) {
+// //         return yScale(d[1]);
+// //     })
+// //     .attr("font-family", "sans-serif")
+// //     .attr("font-size", "11px")
+// //     .attr("fill", "red")
+//
+// // in v4 version
+// var xAxis = d3.axisBottom()
+//     .scale(xScale)
+//     .ticks(5);
+//
+// var yAxis = d3.axisLeft()
+//     .scale(yScale)
+//     .ticks(5);
+//
+// svg.append("g")
+//     .attr("class", "axis")
+//     .attr("transform", "translate(0," + (svg_height - padding) + ")")
+//     .call(xAxis);
+//
+// svg.append("g")
+//     .attr("class", "axis")
+//     .attr("transform", "translate(" + padding + ",0)")
+//     .call(yAxis);
+
+
+// ----------------------------------
+//
+//
+
+</script>

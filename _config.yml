@@ -51,4 +51,3 @@ collections:
   lab:
     output: true
     permalink: /lab/:path/
-

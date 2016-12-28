@@ -7,6 +7,8 @@ permalink: /lab/
 <p>collection of excersises</p>
 
 
-{% for lab in site.lab %}
-    <a href="{{ lab.url }}">{{ lab.title }}</a>
-{% endfor %}
+<ul>
+    {% for lab in site.lab %}
+    <li><a href="{{ lab.url }}">{{ lab.title }}</a></li>
+    {% endfor %}
+</ul>

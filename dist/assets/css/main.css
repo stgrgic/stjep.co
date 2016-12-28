@@ -866,4 +866,63 @@ textarea {
 .push-right {
   margin-left: auto;
 }
+.lab-01 .top-button {
+  background-color: #afa;
+  display: inline-block;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 60px;
+}
+.lab-01 .show-top {
+  background-color: #aaf;
+}
+.lab-02 {
+  position: relative;
+  z-index: 2;
+}
+.lab-02 .member {
+  background-color: #afa;
+}
+.lab-02 .member-bio {
+  background-color: #afa;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 270px;
+  height: 100%;
+  z-index: 1;
+  -webkit-transform: translateX(270px);
+          transform: translateX(270px);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.lab-02 .slide-in {
+/* the author bio section slides in when the user clicks on the team member picture */
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.lab-03 {
+  background-color: #ccc;
+}
+.lab-03 .bar {
+  background-color: #aff;
+  width: 10px;
+  height: 100px;
+  display: inline-block;
+  margin-right: 2px;
+}
+.lab-03 .axis {
+  background-color: #aaf;
+}
+.lab-03 .axis text {
+  fill: #808000;
+  font-family: sans-serif;
+  font-size: 11px;
+}
+.lab-03 .axis .domain {
+  fill: none;
+  stroke: #aaf;
+  shape-rendering: crispEdges;
+}
 /*# sourceMappingURL=main.css.map */
