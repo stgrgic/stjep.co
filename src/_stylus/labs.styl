@@ -1,5 +1,14 @@
 //Labs
 
+body {
+    position relative
+}
+
+//common
+.overflow-hidden{
+    overflow hidden
+}
+
 //
 // Lab-01
 //
@@ -20,31 +29,50 @@
 //
 // Lab 02
 //
-.lab-02 {
-    position relative
-    z-index 2
-
-    .member {
+.lab-2 {
+    transition all 0.3s ease
+    &-team {
+        background-color #aaf
+    }
+    &-member {
         background-color #afa
     }
-    .member-bio {
+    &-member-bio {
         background-color #afa
         position fixed
         right 0
         top 0
+        bottom 0
         width 270px
         height 100%
-        z-index 1
+        z-index 10
+        // display none
+        opacity 0
 
+        transition transform 0.5s ease-out,
+                   opacity 0.5s ease 0.1s
+        transform translateX(270px);
+        
+        // transition-duration 0.3s;
+    }
+    
+    //
+    &-slide-in {
+        transform translateX(0);
+        opacity 1
+        // transition-duration 0.2s;
+        // transition-timing-function ease;
+    }
+    &-slide-out {
+        // position relative
+        transform translateX(-270px);
+        // transition-duration 0.3s;
+        // transition-timing-function ease;
+        // overflow hidden
+    }
 
-        transform: translateX(270px);
-        transition-duration: 0.3s;
-    }
-    .slide-in {
-        /* the author bio section slides in when the user clicks on the team member picture */
-        transform: translateX(0);
-    }
 }
+
 
 //
 // Lab 03
@@ -64,13 +92,13 @@
         background-color #aaf
         text {
             fill olive
-            font-family: sans-serif;
-            font-size: 11px;
+            font-family sans-serif;
+            font-size 11px;
         }
         .domain {
-            fill: none;
-            stroke: #aaf;
-            shape-rendering: crispEdges;
+            fill none;
+            stroke #aaf;
+            shape-rendering crispEdges;
         }
     }
 }

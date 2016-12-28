@@ -51,3 +51,12 @@ collections:
   lab:
     output: true
     permalink: /lab/:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "lab" # a collection in your site, in plural form
+    values:
+      class: "lab-single"
+      layout: "lab"

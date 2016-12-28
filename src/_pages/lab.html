@@ -1,14 +1,19 @@
 ---
 layout: page
 permalink: /lab/
+class: lab
 ---
 
 <h1>Lab</h1>
-<p>collection of excersises</p>
+<p>My collection of excersises</p>
 
 
-<ul>
+<ul class="lab-list">
     {% for lab in site.lab %}
-    <li><a href="{{ lab.url }}">{{ lab.title }}</a></li>
+        {% if lab.status == "in-progress" %}
+            <li class="in-progress"><a href="{{ lab.url }}">{{ lab.title }}</a></li>
+        {% else %}
+            <li class="finished"><a href="{{ lab.url }}">{{ lab.title }}</a></li>
+        {% endif %}
     {% endfor %}
 </ul>
