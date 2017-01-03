@@ -26,6 +26,7 @@ layout: cleen
         </li>
     </ul>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit, minus consequatur doloribus recusandae numquam magnam. Maiores facere, odio deserunt voluptas mollitia nesciunt recusandae optio blanditiis, expedita perferendis eius quidem. ipsum dolor sit amet, consectetur adipisicing elit. Eveniet aut porro sed id, labore, sunt dolore. Accusantium animi est dolor ut illum, odio, atque molestiae officiis nulla in, fuga, similique. ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nisi inventore debitis at cum, cupiditate amet odit blanditiis adipisci error incidunt perspiciatis non sit voluptatum labore quis, eveniet ad, repellat. ipsum dolor sit amet, consectetur adipisicing elit. Natus facere perspiciatis voluptate fugit repudiandae, eum ipsa numquam vero similique quidem nulla, et laboriosam, neque quaerat est tempore a laudantium assumenda! ipsum dolor sit amet, consectetur adipisicing elit. Inventore, molestias aliquam velit. Consectetur voluptate soluta dolorem aperiam culpa molestias, libero repellendus nobis quas quisquam perspiciatis atque rem ducimus aliquid temporibus? ipsum dolor sit amet, consectetur adipisicing elit. Totam porro cupiditate, perferendis non animi nostrum aspernatur, modi, eaque facere temporibus impedit eius dolor nam ea incidunt saepe deleniti, eligendi iste. ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, ipsam consectetur beatae asperiores eligendi sapiente error, illo officia harum impedit non quam possimus rem aut ducimus. Praesentium eos, repellendus alias. ipsum dolor sit amet, consectetur adipisicing elit. Ducimus fugiat quam dolorum, exercitationem praesentium nemo optio assumenda blanditiis omnis a velit, adipisci. Quasi facere, omnis quibusdam amet sed a aut.</p>
+    <div class="lab-2-close-overlay" id="overlay" onclick="hideInfo()"></div>
 </main>
 
 <!-- member-1 -->
@@ -36,17 +37,32 @@ layout: cleen
     <p>druga poruka</p>
 </div>
 
-<script> 
+<script>
+    var overlay = document.getElementById("overlay");
+    var main = document.getElementById("main");
+    var body = document.getElementsByTagName("body");
+    var overlay = document.getElementById("overlay");
+
     function showInfo(member) {
         console.log("member= ",member);
         // var clickedMember = document.getElementById(member);
-        var main = document.getElementById("main");
-        var body = document.getElementsByTagName("body");
+
         var clickedMemberInfo = document.getElementById("member-bio-" + member);
 
         clickedMemberInfo.classList.add("lab-2-slide-in");
         main.classList.add("lab-2-slide-out")
         body[0].classList.add("overflow-hidden")
+        // overlay.classList.add("lab-2-is-visible")
+
+    }
+    function hideInfo() {
+        var otvoreni = document.getElementsByClassName("lab-2-slide-in")
+        overlay.classList.remove("lab-2-is-visible")
+
+        otvoreni[0].classList.remove("lab-2-slide-in");
+        main.classList.remove("lab-2-slide-out")
+        body[0].classList.remove("overflow-hidden")
+        // overlay.classList.remove("lab-2-is-visible")
 
     }
     // showInfo(member){

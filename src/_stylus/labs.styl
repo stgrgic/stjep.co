@@ -31,6 +31,7 @@ body {
 //
 .lab-2 {
     transition all 0.3s ease
+    position relative
     &-team {
         background-color #aaf
     }
@@ -46,7 +47,6 @@ body {
         width 270px
         height 100%
         z-index 10
-        // display none
         opacity 0
 
         transition transform 0.5s ease-out,
@@ -69,10 +69,45 @@ body {
         // transition-duration 0.3s;
         // transition-timing-function ease;
         // overflow hidden
+        & .lab-2-close-overlay{
+            display block
+            // transition display 0.1s ease,
+                        // opacity 0.4s ease 0.1s
+            animation: cd-fade-in 0.3s forwards;
+            // opacity 0.5
+        }
+    }
+    &-close-overlay {
+        position fixed
+        top 0
+        left 0
+        bottom 0
+        right 0
+        width 100%
+        // background-color rgba(#ccc, 0)
+        // opacity 0
+        background-color #ccc
+        z-index 20
+        // overflow hidden
+        cursor pointer
+        display none
+    }
+    &-is-visible {
+        display block
+        opacity .5
     }
 
 }
 
+@keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
 
 //
 // Lab 03
@@ -106,14 +141,79 @@ body {
 
 
 
+.lab-04{
+    &-modal-overlay-visibility {
+        position fixed
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background-color #afa
+        // display none
+        opacity 0
+        visibility hidden
+        transition opacity 0.3s 0s, visibility 0s .3s
+        &.is-visible {
+            opacity 1
+            visibility visible
+            transition opacity 0.3s 0s, visibility 0s 0s
+        }
+    }
+    
+    &-modal-overlay-display {
+        position fixed
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background-color #ffa
+        
+        opacity 0
+        visibility hidden
+        display block
+            
+        transition all 0.3s 0s
+        
+        // this is when it is comming back
+        // transition display 0s .3s, opacity 0.3s 0s
+        // animation modal-show 0.2s ease
+        // animation modal-show 0.2s ease
+        
+        // animation modal-show 0.2s ease forwards
+        &.is-visible {
+            opacity 1
+            visibility visible
+            // display block
+                
+            // animation modal-show 0.2s ease
+            // First transition opaciti on removing is-visible class, then visibility
+            // transition display 0s 0.001s, opacity 0.3s 0.001s
+            // animation modal-show 0.2s ease forwards
+            // animation modal-show 0.2s ease
+        }
+        &.is-removed {
+            display none
+        }
+    }
+}
 
-
-
-
-
-
-
-
+@keyframes modal-show {
+  0% {
+    display none
+    visibility hiden
+    opacity 0
+  }
+  1% {
+    display block
+    visibility visible
+    opacity 0
+    // transform scale(0)
+  }
+  100% {
+    opacity 1
+    // transform: scale(1)
+  }
+}
 
 
 
