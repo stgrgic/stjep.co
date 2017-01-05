@@ -1,6 +1,150 @@
 ---
 title: 05 - Quick View
-layout: clean
+<!-- layout: clean -->
 ---
 
 <h1>Quick view</h1>
+
+<ul>
+    <li><a href="#" class="trigger">Open</a></li>
+    <li><a href="#" class="trigger">Open</a></li>
+    <li><a href="#" class="trigger">Open</a></li>
+    <li><a href="#" class="trigger">Open</a></li>
+    <li><a href="#" class="trigger">Open</a></li>
+    <li><a href="#" class="trigger">Open</a></li>
+</ul>
+
+<div class="quick-view">
+    Quick view 
+    <button>X</button>
+</div>
+
+<script>
+    var trigger = document.querySelectorAll(".trigger");
+
+    // console.log(trigger);
+    // for (var i = 0; i >= trigger.lenght; i++) {
+        
+    //     console.log("Element", trigger[i])
+    // }
+    trigger.forEach(function (element) {
+        // console.log(element);
+        element.addEventListener("click", function (event) {
+            event.preventDefault();
+            // Here i get element i clicked on
+            // console.log("Clicked", event, element)
+            element.classList.toggle("red")
+            element.parentElement.classList.toggle("red")
+        });
+
+    });
+
+    // -------------------------------------------------------------------- kod s Designers Roada koji sam isprobavao
+
+    
+    function setAttributes(el, attrs) {
+      for(var key in attrs) {
+        el.setAttribute(key, attrs[key]);
+      }
+    }
+
+    // Provjeri jesu sve slike loadane
+    var imgs = document.images,
+        len = imgs.length,
+        counter = 0;
+
+    [].forEach.call( imgs, function( img ) {
+        img.addEventListener( 'load', incrementCounter, false );
+    } );
+
+    function incrementCounter() {
+        counter++;
+        if ( counter === len ) {
+            console.log( 'All images loaded!' );
+        }
+    }
+    // Zavrsi provjeravanje
+
+
+    // I ovo je ok ako ne zelim dodavati klase u markdown
+    var images = document.querySelectorAll(".post-content img")
+
+    // Ovako dohvacamo sliku koju mozemo zoomirati.
+    // var zImage = document.querySelectorAll(".js-zoom-image")
+
+    images.forEach(function (image) {
+
+        // dodavalo bi na svaku sliku redom
+        // console.log(image)
+
+        image.addEventListener("click", function (event) {
+            // console.log(image)
+
+            // Here i get dimensions of image
+            var clickedImage = {
+                width: image.clientWidth,
+                height: image.clientHeight
+            }
+            //here are dimensions of window
+            var windowHeight = window.innerHeight
+            var windowWidth = window.innerWidth
+
+            // calculate end valuse for clicked image
+            var finalHeight = windowHeight - 40,
+                finalWidth = finalHeight * (clickedImage.width/clickedImage.height),
+                finalLeft = (windowWidth / 2) - (finalWidth / 2);
+
+
+            var scale = (finalHeight - 40 ) / clickedImage.height;
+
+            // console.log(scale)
+
+            var initialAttributes = {
+                "height": clickedImage.height + "px",
+                "width": clickedImage.width + "px"
+            }
+
+            // var a = document.querySelector('a[data-a="1"]');
+
+
+
+            // var initialStyle = "height: " + clickedImage.height + "px; width: " + clickedImage.width + "px;"
+
+            // var finalAttributes = {
+            //     // "position": "fixed",
+            //     "top": "20px",
+            //     "left": finalLeft + "px",
+            //     "height": finalHeight + "px",
+            //     "width": finalWidth + "px"
+            // }
+
+            // var finalStyle = "position: fixed; top: 20px; left: " + finalLeft + "px; height: " + finalHeight + "px; width: " + finalWidth + "px;"
+
+            // console.log(clickedImageNewStyle);
+
+
+            // // Set initial atributes
+            // setAttributes(image, initialAttributes);
+
+            // Set initial Style
+            // image.style.cssText = initialStyle;
+
+            // console.log(image.naturalWidth, image.naturalHeight)
+
+            // Set new attributes
+            setTimeout(function() {
+                // image.classList.toggle("red");
+                // image.style.cssText = finalStyle
+            }, 20);
+
+
+            // console.log("w", clickedImage.width, " h", clickedImage.height,
+            //     window.innerHeight, window.innerWidth)
+        });
+    });
+
+
+    // document.getElementById("myImg").naturalWidth;
+
+
+</script>

@@ -116,7 +116,7 @@ gulp.task("build:scripts", function () {
                     paths.js.src + "second.js"
                     ])
         .pipe(sourcemaps.init())
-        .pipe(concat("app.js"))
+        .pipe(concat("main.js"))
         .pipe(sourcemaps.write("./"))
         .pipe(gulp.dest(paths.js.dest))
 });
