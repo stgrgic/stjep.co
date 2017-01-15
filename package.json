@@ -36,7 +36,6 @@
     "normalize-styl": "^3.0.3",
     "run-sequence": "^1.2.1",
     "rupture": "^0.6.1",
-    "slick-carousel": "^1.6.0",
     "stylus": "^0.54.5"
   }
 }

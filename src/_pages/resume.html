@@ -1,0 +1,36 @@
+---
+layout: page
+permalink: /resume/
+class: resume
+---
+<div class="row">
+    <div class="left">
+        <h2>Introduction</h2>
+    </div>
+    
+    <div class="right">
+        <p>Hi, I am Stjepan, I am designer and developer curently living in Zagreb, Croatia. I am runing my own studio caled underlayer and I have worked with startups and business around the world like nickel&swan, eventos,talkbook, and others.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="left">
+        <h2>Employment</h2>
+    </div>
+    <div class="right">
+        <div class="company">
+            {% include company-header.html
+                name = "Vibby"
+                position = "Product designer / Front-end developer"
+                period = "March 2015 - January 2016"
+            %}
+            <div class="projects">
+                {% include company-project.html
+                    name = "Vibby player"
+                    description = "A new kind of video player that required extensive UX development."
+                    link = "http://proba.com"
+                %}
+            </div>
+        </div>
+    </div>
+</div>
