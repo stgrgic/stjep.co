@@ -3,7 +3,7 @@ layout: page
 permalink: /resume/
 class: resume
 ---
-<div class="row">
+<div class="row introduction">
     <div class="left">
         <h2>Introduction</h2>
     </div>
@@ -23,11 +23,33 @@ class: resume
                 name = "Vibby"
                 position = "Product designer / Front-end developer"
                 period = "March 2015 - January 2016"
+                introduction = "I was a lead product designer and front-end designer. I was involved in branding, introducing new product concepts, designing experience and interface, as well as writeing HTML and CSS along the way."
             %}
             <div class="projects">
                 {% include company-project.html
                     name = "Vibby player"
                     description = "A new kind of video player that required extensive UX development."
+                    link = "http://proba.com"
+                %}
+                {% include company-project.html
+                    name = "Vib creation project"
+                    description = "Users had to go trough the simple tree step process in order to create a “vib” - shorter form of video created from video’s parts"
+                    link = "http://proba.com"
+                %}
+            </div>
+        </div>
+        <!-- ENTG -->
+        <div class="company">
+            {% include company-header.html
+                name = "Gray Entourage"
+                position = "Screen Designer"
+                period = " July 2014 - March 2015"
+                introduction = "In joint venture Gray Entourage, I was involved in advertising projects ranging from designing online advertising materials for clients like Microsoft, Erste Bank, Vipnet and Tomato, to designing websites for TZ Istra and Allianz."
+            %}
+            <div class="projects">
+                {% include company-project.html
+                    name = "Vip Xmas Card"
+                    description = "I was involved from the beginning of ideation proces and character development to UI design and character illustration."
                     link = "http://proba.com"
                 %}
             </div>
