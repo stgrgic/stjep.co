@@ -1,7 +1,16 @@
+
 <nav>
-    <ul class="links">
-        <li class="logo"><a href="/">{% include stjepco-logo.html %}</a></li>
-        <li><a href="/lab">Lab</a></li>
-        <li><a href="/resume/">Résumé</a></li>
+    <ul>
+        {% for node in site.pages limit: 3 %}
+            <li class="item-{{ node.path | remove:'_pages/' | remove:'.html' }} ">
+                <a href="{{ node.permalink }}" class="{% if page.url == node.permalink %}active{% endif %}">
+                {% if node.permalink == "/" %}
+                    {% include stjepco-logo.html%}
+                {% else %}
+                    {{ node.path | remove:'_pages/' | remove:'.html' | capitalize }}
+                {% endif %}
+                </a>
+            </li>
+        {% endfor %}
     </ul>
 </nav>

@@ -1,23 +1,16 @@
 ---
 layout: index
+class: page
 ---
 
 <div class="paper">
-    <main class="{{ page.class }}" id="main">
+    <div class="inner">
         {% include nav.html %}
-        <article>
-            {{ content }}
-        </article>
-        <footer>
-            <ul>
-              <li><a target="_blank" href="https://dribbble.com/stjepco">Dribbble</a></li>
-              <li><a target="_blank" href="https://www.behance.net/stjepco">Behance</a></li>
-              <li><a target="_blank" href="https://hr.linkedin.com/in/stjepangrgic">Linked In</a></li>
-              <li><a target="_blank" href="https://twitter.com/stjepco">Twitter</a></li>
-              <li><a target="_blank" href="https://instagram.com/stjepco/">Instagram</a></li>
-              <li><a target="_blank" href="https://github.com/stjepco">Github</a></li>
-            </ul>
-            <p class="small">Design & Code by Stjepan Grgic.<br>Hosted on GitHub Pages. Find sourcode here.</p>
-        </footer>
-    </main>
+        <main class="{{ page.class }}">
+            <article>
+                {{ content }}
+            </article>
+        </main>
+        {% include site-footer.html %}
+    </div>
 </div>

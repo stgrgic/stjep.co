@@ -1,0 +1,33 @@
+@media print {
+    :root{
+        fluid-type(16px, 18px)
+    }
+    nav {
+        display none
+    }
+    .resume {
+        article {
+            margin-top 0
+        }
+        .row {
+            flex-direction column
+            margin-bottom 0
+            .left {
+                text-align left
+                // margin 2rem 0 1rem
+                margin-top 1rem !important
+            }
+        }
+        .project {
+            .link {
+                display none !important
+            }
+        }
+        .company {
+            margin 0 !important
+        }
+    }
+    footer {
+        display none
+    }
+}

@@ -1,0 +1,18 @@
+---
+layout: page
+permalink: /experiments/
+class: experiments
+---
+
+<h1>Experiments</h1>
+<p>Collection of web experiments where i was testing CSS layouts, HTML sintax, JavaScript interaction and libraries. I will keep updating them as i tried womething new.</p>
+
+
+<ul class="experiment-list">
+    {% for experiment in site.experiments reversed %}
+        <li class="{{ experiment.status }}">
+            <a href="{{ experiment.url }}" target="_blank">{{ experiment.title }}</a>
+            <!-- <a href="{{ experiment.source }}">#Source</a> -->
+        </li>
+    {% endfor %}
+</ul>

@@ -1,37 +1,68 @@
 // Navbar
 
 nav {
-    // background-color #afa
-    // display flex
-    .links {
+    display flex
+    ul {
+        list-style none
         display flex
         align-items center
-        max-width 770px
-        // padding 15px
-        margin 0 auto
-        .logo {
-            margin-right auto
-        }
-        a {
-            padding 5px 1rem
-            line-height 1
+        padding 0
+        margin 0
+        width 100%
+        li {
+            margin-right 1rem
+            a {
+                position relative
+                transition all 0.3s ease
+                &:after {
+                    display block
+                    content ""
+                    position absolute
+                    bottom -5px
+                    left 0
+                    width 30px
+                    height 2px
+                    background-color $color-font
+                    opacity 0
+                    transition all 0.3s ease
+                }
+                &:hover {
+                    &:after {
+                        opacity 0.2
+                        width 40px
+                    }
+                }
+            }
+            .active {
+                &:after {
+                    opacity 0.2
+                }
+            }
+            &.item-home {
+                order -1
+                line-height 1
+                // margin-right auto
+                margin-right 2rem
+                a {
+                    display inline-block
+                    font-size 0
+                    &:after {
+                        display none
+                    }
+                    svg {
+                        font-size 0
+                        width 41px
+                        height 42px
+                        path {
+                            fill $color-link
+                        }
+                        &:hover path{
+                            fill $color-link-hover
+                        }
+                    }
+                }
+            }
         }
     }
-    .logo {
-        font-size 0
-        a {
-            display inline-block
-            font-size 0
-            padding 0
-        }
-    }
-    svg.icon-logo {
-        // background-color #aaf
-        width 42px
-        height 42px
-        font 0
-        path {
-            fill $color-font
-        }
-    }
+
 }
