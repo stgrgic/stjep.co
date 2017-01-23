@@ -1,18 +1,12 @@
 ##
-title: Your awesome title
-email: your-email@domain.com
+title: stjep.co
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Personal website of Stjepan Grgic.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://stjep.co" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
-# theme: minima
 
 #Where things are
 source:         ./src
@@ -25,18 +19,16 @@ includes_dir:   ./_includes
 keep_files: ["assets"]
 include: ["_pages"]
 
-gems:
-  - jekyll-feed
+# TODO
+# gems:
+#   - jekyll-feed
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - gulpfile.js
+exclude: ["gulpfile.js", "Gemfile", "Gemfile.lock", "package.json", "README.md", "LICENSE", "node_modules"]
 
 collections:
   experiments:
     output: true
-    permalink: /experiments/:path/
+    permalink: /lab/:path/
 
 defaults:
   -
