@@ -38,3 +38,9 @@ defaults:
     values:
       layout: "experiment"
       status: "done"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
