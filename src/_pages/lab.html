@@ -13,6 +13,9 @@ description: Collection of experiments and learning projects.
     {% for experiment in site.experiments reversed %}
         <li class="{{ experiment.status }}">
             <a href="{{ experiment.url }}">{{ experiment.title }}</a>
+            {% if experiment.status == "in-progress" %}
+                 <span class="status">{{ experiment.status }}</span>
+            {% endif %}
         </li>
     {% endfor %}
 </ol>

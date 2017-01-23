@@ -8,7 +8,6 @@ h1 {
 }
 
 .lab {
-    // background-color #afa
     .experiment-list {
         counter-reset experiment-list-counter
         list-style-type none
@@ -21,11 +20,21 @@ h1 {
                 position absolute
                 left -1.2rem
                 font-weight 500
-                // font-size 1.2rem
                 top 7px
                 opacity 0.2
                 text-align right
                 line-height 1
+            }
+            &.in-progress {
+                // background-color #afa
+            }
+            .status {
+                background-color #FFB23F
+                color #fff
+                font-weight 500
+                font-size 0.7rem
+                padding 0 0.5em 0.2em
+                border-radius 3px
             }
         }
     }

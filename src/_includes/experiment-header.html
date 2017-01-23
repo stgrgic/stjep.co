@@ -1,5 +1,12 @@
 <header>
     <p><a href="/lab/">Back to Lab</a></p>
     <h1>{{page.title}}</h1>
-    <p class="date">Expriment 01, <time datetime="{{ page.date | date: "%m-%d-%Y" }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time></p>
+    <p class="meta">
+        <span class="number">Expriment 01</span>
+        <time datetime="{{ page.date | date: "%m-%d-%Y" }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>
+
+        {% if page.status == "in-progress" %}
+            <span class="status">In progress</span>
+        {% endif %}
+    </p>
 </header>
