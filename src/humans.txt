@@ -1,15 +1,9 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+/* TEAM */                   
+    Author: Stjepan Grgic                                         
+    Twitter: @stjepco   
+    From:Zagreb, Croatia
 
-# TEAM
-
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    CSS3, HTML5, JavaScript
-    Normalize.css
+/* SITE */
+    Language: English
+    Doctype:HTML5
+    Software: Sublime Text 3, Google Chrome, Sketch
