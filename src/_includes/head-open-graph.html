@@ -1,0 +1,6 @@
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+<meta property="og:type" content="{% if page.og-type %}{{ page.og-type }}{% else %}{{ site.og-type }}{% endif %}" />
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />

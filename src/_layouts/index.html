@@ -1,22 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>{% if page.title %}{{ page.title }} - stjep.co{% else %}{{ site.title }} {% endif %}</title>
-    <meta name="description" content="{{ page.description }}">
-
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
-
-    <script src="https://use.typekit.net/jpg3qui.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-    <!-- <link type="text/plain" rel="author" href="http://domain/humans.txt" /> -->
+    {% include head.html %}
 </head>
 <body class="{{layout.class}} {{page.class}}">
 

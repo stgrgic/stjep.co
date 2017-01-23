@@ -21,3 +21,4 @@ config.codekit3
 .idea/
 
 dist/
+.publish/

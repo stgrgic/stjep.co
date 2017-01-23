@@ -1,7 +1,6 @@
 ##
 title: stjep.co
-description: > # this means to ignore newlines until "baseurl:"
-  Personal website of Stjepan Grgic.
+description: Personal website of Stjepan Grgic.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://stjep.co" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -25,11 +24,17 @@ include: ["_pages"]
 
 exclude: ["gulpfile.js", "Gemfile", "Gemfile.lock", "package.json", "README.md", "LICENSE", "node_modules"]
 
+
+# open Graph
+og-type: "website"
+
+#collections
 collections:
   experiments:
     output: true
     permalink: /lab/:path/
 
+# defailts
 defaults:
   -
     scope:
@@ -38,6 +43,7 @@ defaults:
     values:
       layout: "experiment"
       status: "done"
+      og-type: "article"
   -
     scope:
       path: ""
