@@ -1,10 +1,31 @@
----
-title: Image zoom
-date: 2017-01-01 15:31:47 +0100
----
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <title>Image zoom - stjep.co</title>
+    <meta name="description" content="">
 
-<p>When i was starting my blog <a href="">Designer's road</a>, I decided all images should have zoom feature similar to Medium's. Readers should be able to zoom image by clicking or tapping, and it should grow, from any position on the screen to the center of the screen. And I should code it.</p>
+    <link rel="canonical" href="http://stjep.co/lab/experiment-01-image-zoom/">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <script src="https://use.typekit.net/jpg3qui.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- <link type="text/plain" rel="author" href="http://domain/humans.txt" /> -->
+</head>
+<body class="experiment experiment-01-image-zoom">
+    <div class="content">
+        <header>
+    <p><a href="/lab/">Back to Lab</a></p>
+    <h1>Image zoom</h1>
+    <p class="date">Expriment 01, <time datetime="01-01-2017" itemprop="datePublished">01 January 2017</time></p>
+</header>
+        <p>When i was starting my blog <a href="">Designer's road</a>, I decided all images should have zoom feature similar to Medium's. Readers should be able to zoom image by clicking or tapping, and it should grow, from any position on the screen to the center of the screen. And I should code it.</p>
 
 <p>I am still new to JS but this was my learning project. I had some crazy ideas how to achive that but non of them worked. So I had to google the solution</p>
 <p>And I found few of them:</p>
@@ -26,33 +47,29 @@ date: 2017-01-01 15:31:47 +0100
 
 <p>First, get all images on page</p>
 
-<!-- {% highlight ruby %}
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
-{% endhighlight %} -->
+<!-- <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">show</span>
+  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="c1"># show.html.erb</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@widget</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></figure> -->
 
-{% highlight javascript %}
-// Add click listener to all images
-// on click open image, or close
-images.forEach(function (image) {
-    image.addEventListener("click", function (event) {
-        clickedImage = image;
-        // Trying to have single source of trouth
-        // but this works better then is image is open
-        // this way we can remove opened image begore it is fuly opened asdasdasdasdasdasdasdasdadasdadasdasdadasdasdadasdadasda
-        if (imageIsOpened) {
-            closeImage(clickedImage);
-        } else {
-            openImage(clickedImage);
-        }
-    });
-});
-{% endhighlight %}
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Add click listener to all images</span>
+<span class="c1">// on click open image, or close</span>
+<span class="nx">images</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">image</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">image</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">clickedImage</span> <span class="o">=</span> <span class="nx">image</span><span class="p">;</span>
+        <span class="c1">// Trying to have single source of trouth</span>
+        <span class="c1">// but this works better then is image is open</span>
+        <span class="c1">// this way we can remove opened image begore it is fuly opened asdasdasdasdasdasdasdasdadasdadasdasdadasdasdadasdadasda</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">imageIsOpened</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">closeImage</span><span class="p">(</span><span class="nx">clickedImage</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nx">openImage</span><span class="p">(</span><span class="nx">clickedImage</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+<span class="p">});</span></code></pre></figure>
 
 
 <script>
@@ -185,3 +202,7 @@ body.addEventListener("click", function (event) {
 
 
 </script>
+    </div>
+</body>
+
+</html>
