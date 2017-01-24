@@ -6,7 +6,7 @@ class: resume
 
 <header>
     <h1>Stjepan Grgic</h1>
-    <p>Designer, developer, illustrator, photographer</p>
+    <p>Designer, developer, illustrator, photographer.<br> This is my honest resume.</p>
 </header>
 <section class="row resume-intro">
     <div class="left">
@@ -26,7 +26,10 @@ class: resume
                 <section class="header">
                     <h3 class="name">{{ company.name }}</h3>
                     <p class="position">{{ company.position }}</p>
-                    <p class="period">{{ company.period }}</p>
+                    <p class="meta">
+                        <span class="period">{{ company.period }} </span>
+                        <span class="website"><a href="{{ company.website }}"> Company website</a></span>
+                    </p>                    
                     <p class="introduction">{{ company.introduction }}</p>
                 </section>
                 {% if company.projects %}
@@ -35,7 +38,9 @@ class: resume
                         {% for project in company.projects %}
                             <div class="project">
                                 <h5 class="name">{{ project.name }}</h5>
-                                <a href="{{ project.url }}" class="link" target="_blank">Link</a>
+                                {%if project.url %}
+                                <a href="{{ project.url }}" class="link" target="_blank">Check it out</a>
+                                {% endif %}
                                 <p class="description">{{ project.description }}</p>
                             </div>
                         {% endfor %}
@@ -58,7 +63,7 @@ class: resume
                 </div>
             {% endfor %}
         </div>
-        <div class="courses">
+<!--         <div class="courses">
             <h3>Courses</h3>
             {% for course in site.data.cv.education.courses %}
                 <div class="course">
@@ -66,13 +71,9 @@ class: resume
                     <p>{{ course.year }}</p>
                 </div>
             {% endfor %}
-        </div>
+        </div> -->
     </div>
 </section>
-
-
-
-
 
 
 

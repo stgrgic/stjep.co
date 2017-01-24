@@ -1,17 +1,27 @@
-
 {
-    "introduction": "Hi, I am Stjepan, I am designer and developer curently living in Zagreb, Croatia. I am runing my own studio caled underlayer and I have worked with startups and business around the world like nickel&swan, eventos,talkbook, and others.",
+    "introduction": "My name is Stjepan Grgic. I describe myself as a designer who loves to code, take photos, draw... Interaction design and user experience are the fields I focus most of my energy lately. There, I can be creative with everything I love to do.<br> Drawing helps me visualize my thoughts and express my ideas. Photography was essential for my understanding of light, color and all principles of great design.<br> Coding gives me the power to prototype interactions and to build anything I can imagine.<br> Currently, I am living in Zagreb, Croatia where I run my own UI/UX design studio called <a href='http://bit.ly/underlayer-design' target='_blank'>underlayer</a>.",
     "employment": [
         {
             "name": "Underlayer",
-            "position": "Founder, designer",
+            "position": "Founder, designer, front-end develper",
             "period": "January 2016 - present",
-            "introduction": "I have started my own company",
+            "website": "http://underlayer.design/",
+            "introduction": "I have started underlayer studio with hopes I will be able to run business all by myself. I worked on few nice projects. But, it was a tough year. I learned a lot. I saw how business requires a lot of effort so now I can appreciate business people much more.",
             "projects": [
                 {
+                    "name": "Memgraph",
+                    "url": "http://www.memgraph.io/",
+                    "description": "MemGraph is a young startup that is building next generation graph database system. I designed their logo and overall design language fo app. Also, I was working on designing and coding a web interface that will be used for querying database, monitoring machines, and monitoring performances."
+                },
+                {
                     "name": "Agrivi",
-                    "url": "behance",
-                    "description": "I was involved from the beginning of ideation proces and character development to UI design and character illustration."
+                    // "url": "/portfolio/Agrivi/",
+                    "description": "Agrivi is agri-tech startup from Croatia. I worked on redesigning their brand identity:  a new logo, font, color palette, visual language, and imagery. My primary job was to redesign web application interface, so I worked with product guys to deliver the best experience for their users. Lastly, I worked on landing page redesign as well."
+                },
+                {
+                    "name": "nickel&swan",
+                    "url": "http://www.nickelandswan.com/",
+                    "description": "Nickel&swan is a fin-tech startup focused on building innovative software traders and brokers. I worked on designing part of their web application that you can check out live <a href='http://app.nickelandswan.com/62'>here</a>."
                 }
             ]
         },
@@ -19,17 +29,18 @@
             "name": "Vibby",
             "position": "Product designer / Front-end designer",
             "period": "March 2015 - January 2016",
-            "introduction": "I was a lead product designer and front-end designer. I was involved in branding, introducing new product concepts, designing experience and interface, as well as writeing HTML and CSS along the way.",
+            "website": "https://www.vibby.com/",
+            "introduction": "I was a lead product designer. I was involved in branding, introducing new product concepts, designing experience and interface, as well as coding HTML and CSS architecture for this large scale web application. Year almost passed, and I saw I gave all that I could to the idea, so I decided i should try to go on my own.",
             "projects": [
                 {
                     "name": "Vibby player",
-                    "url": "github",
-                    "description": "A new kind of video player that required extensive UX development."
+                    "url": "https://www.vibby.com/watch?vib=71KCMcqWZUc",
+                    "description": "Video player that introduced 'partial' video bits. It allowed users to watch and comment only on important/highlighted parts of the video."
                 },
                 {
                     "name": "Vib creation proces",
-                    "url": "github",
-                    "description": "Users had to go trough the simple tree step process in order to create a “vib” - shorter form of video created from video’s parts"
+                    "url": "https://www.vibby.com/create/1",
+                    "description": "A simple tree step process user had to go trough in order to create a “vib” - a shorter form of a video created from its parts."
                 }
             ]
         },
@@ -37,17 +48,18 @@
             "name": "Gray Entourage",
             "position": "Screen Designer",
             "period": "July 2014 - March 2015",
-            "introduction": "In joint venture Gray Entourage, I was involved in advertising projects ranging from designing online advertising materials for clients like Microsoft, Erste Bank, Vipnet and Tomato, to designing websites for TZ Istra and Allianz.",
+            "website": "http://entg.co/",
+            "introduction": "In joint venture Gray Entourage, I was involved in advertising projects ranging from designing online advertising materials for clients like Microsoft, Erste Bank, Vipnet and Tomato, to designing websites for TZ Istra and Allianz. After almost a year, and beautiful time I have spent with the team, I got chance to work fro startup that I couldn't reject.",
             "projects": [
                 {
                     "name": "Vip Xmas Card",
-                    "url": "behance",
-                    "description": "I was involved from the beginning of ideation proces and character development to UI design and character illustration."
+                    "url": "https://www.behance.net/gallery/23219673/Vip-Xmas-Card",
+                    "description": "I was involved in whole process: from the beginning of ideation and character development to UI design and character illustration."
                 },
                 {
                     "name": "Share Istria",
-                    "url": "dribble",
-                    "description": "I was working on look and feel development, photography, art direction, design for desktop and mobile, as well as icon design."
+                    "url": "https://dribbble.com/shots/2579211-Share-Istria-Landing-Page",
+                    "description": "I worked on look & feel development, photography, art direction, design for desktop and mobile, as well as icon design."
                 }
             ]
         },
@@ -55,13 +67,15 @@
             "name": "virtus dizajn",
             "position": "Web designer",
             "period": "February 2014 - April 2014",
-            "introduction": "Short intro"
+            "website": "http://virtus-dizajn.com/",
+            "introduction": "It was my lucky job. They gave me chance me to come back to Zagreb after bad family situation. I worked on a couple of nice websites that I designed and coded. However, the way they have run business didn't fit my wiev, so I  went on the search for another job."
         },
         {
             "name": "Agencija Točka",
             "position": "Graphic designer",
             "period": "July 2013 - September 2013",
-            "introduction": "short intro"
+            "website": "http://tocka.co/",
+            "introduction": "My first real job. It was short, but I had great experience. I was learning from them, and made friends along the way."
         }
     ],
     "education":{
@@ -71,7 +85,7 @@
                 "period": "2010 - 2013"
             },
             {
-                "name": "Natural sciences & mathematics gymnasium in Pozega, Croatia",
+                "name": "Natural sciences & mathematics gymnasium in Požega, Croatia",
                 "period": "2006 - 2010"
             }
         ],
