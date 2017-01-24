@@ -3,7 +3,7 @@
     "employment": [
         {
             "name": "Underlayer",
-            "position": "Founder, designer, front-end develper",
+            "position": "Founder, designer and develper",
             "period": "January 2016 - present",
             "website": "http://underlayer.design/",
             "introduction": "I have started underlayer studio with hopes I will be able to run business all by myself. I worked on few nice projects. But, it was a tough year. I learned a lot. I saw how business requires a lot of effort so now I can appreciate business people much more.",
@@ -27,7 +27,7 @@
         },
         {
             "name": "Vibby",
-            "position": "Product designer / Front-end designer",
+            "position": "Designer and developer",
             "period": "March 2015 - January 2016",
             "website": "https://www.vibby.com/",
             "introduction": "I was a lead product designer. I was involved in branding, introducing new product concepts, designing experience and interface, as well as coding HTML and CSS architecture for this large scale web application. Year almost passed, and I saw I gave all that I could to the idea, so I decided i should try to go on my own.",
@@ -112,11 +112,21 @@
             }
         ]
     },
-    "projects": [
+    "personal-projects": [
         {
-            "name": "eventos",
-            "link": "link",
-            "description": "app that i was building with friend"
+            "name": "Designer's road",
+            "link": "http://designersroad.com",
+            "description": "Travel blog I have started to share my experiences and photos in the hope that it will help others to get courage and go on the road."
         }
+    ],
+    "skills": [
+        "Design with a focus on user interfaces and interactions.",
+        "Front-end development with strong orientation on semantic HTML and CSS (Stylus, SCSS) architecture.",
+        "JavaScript - junior, but learning and growing every day.",
+        "Comfortable using terminal,  git and phabricator.",
+        "Illustration and drawing artisan.",
+        "Photography geek.",
+        "Decent experience with animation in After Effects. <a href='http://bit.ly/sg-animations'>Check out</a>.",
+        "Some experience with 3D modeling and animation."
     ]
 }

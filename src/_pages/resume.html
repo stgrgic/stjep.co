@@ -4,44 +4,44 @@ permalink: /resume/
 class: resume
 ---
 
-<header>
-    <h1>Stjepan Grgic</h1>
-    <p>Designer, developer, illustrator, photographer.<br> This is my honest resume.</p>
+<header class="header">
+    <h1 class="header__title">Stjepan Grgic</h1>
+    <p class="header__description">Designer, developer, illustrator, photographer.<br> This is my honest resume.</p>
 </header>
 <section class="row resume-intro">
-    <div class="left">
-        <h2>Introduction</h2>
+    <div class="row__left">
+        <h2 class="row__left__title resume-intro__title">Introduction</h2>
     </div>
-    <div class="right">
-        <p class="introduction">{{ site.data.cv.introduction }}</p>
+    <div class="row__right">
+        <p class="resume-intro__introduction">{{ site.data.cv.introduction }}</p>
     </div>
 </section>
 <section class="row employment">
-    <div class="left">
-        <h2>Employment</h2>
+    <div class="row__left">
+        <h2 class="row__left__title">Employment</h2>
     </div>
-    <div class="right">
+    <div class="row__right">
         {% for company in site.data.cv.employment %}
             <section class="company">
-                <section class="header">
-                    <h3 class="name">{{ company.name }}</h3>
-                    <p class="position">{{ company.position }}</p>
-                    <p class="meta">
-                        <span class="period">{{ company.period }} </span>
-                        <span class="website"><a href="{{ company.website }}"> Company website</a></span>
+                <section class="company__header">
+                    <h3 class="company__name">{{ company.name }}</h3>
+                    <p class="company__position">{{ company.position }}</p>
+                    <p class="company__meta">
+                        <span class="company__period">{{ company.period }} </span>
+                        <span class="company__website"><a href="{{ company.website }}"> Company website</a></span>
                     </p>                    
-                    <p class="introduction">{{ company.introduction }}</p>
+                    <p class="company__introduction">{{ company.introduction }}</p>
                 </section>
                 {% if company.projects %}
                     <section class="projects">
-                        <h4>Featured projects</h4>
+                        <h4 class="projects__title">Featured projects</h4>
                         {% for project in company.projects %}
                             <div class="project">
-                                <h5 class="name">{{ project.name }}</h5>
+                                <h5 class="project__name">{{ project.name }}</h5>
                                 {%if project.url %}
-                                <a href="{{ project.url }}" class="link" target="_blank">Check it out</a>
+                                <a href="{{ project.url }}" class="project__link" target="_blank">Check it out</a>
                                 {% endif %}
-                                <p class="description">{{ project.description }}</p>
+                                <p class="project__description">{{ project.description }}</p>
                             </div>
                         {% endfor %}
                     </section>
@@ -50,12 +50,26 @@ class: resume
         {% endfor %}
     </div>
 </section>
-<section class="row education">
-    <div class="left">
-        <h2>Education</h2>
+<div class="row personal-projects">
+    <div class="row__left">
+        <h2 class="row__left__title">Projects</h2>
     </div>
-    <div class="right">
-        <div class="formal">
+    <div class="row__right">
+        {% for project in site.data.cv.personal-projects %}
+        <div class="project">
+            <h3 class="project__name">{{project.name}}</h3>
+            <a class="project__link" href="{{ project.link }}">Check out</a>
+            <p class="project__description">{{ project.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<section class="row education">
+    <div class="row__left">
+        <h2 class="row__left__title">Education</h2>
+    </div>
+    <div class="row__right">
+        <div class="education__formal">
             {% for institution in site.data.cv.education.formal %}
                 <div class="institution">
                     <h4>{{ institution.name }}</h4>
@@ -74,7 +88,16 @@ class: resume
         </div> -->
     </div>
 </section>
-
-
-
+<section class="row skills">
+    <div class="row__left">
+        <h2 class="row__left__title">Skills</h2>
+    </div>
+    <div class="row__right">
+        <ul class="slill-list">
+            {% for skill in site.data.cv.skills %}
+                <li class="slill-list__item">{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
 

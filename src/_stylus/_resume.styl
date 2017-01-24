@@ -1,180 +1,215 @@
 .resume {
     
-    main {
-        font-size 0.83rem
-    }
-    p {
-        margin 0
-    }
+main {
+    font-size 0.83rem
+}
+p {
+    margin 0
+}
+
+// Layout
+.row {
+    display flex
+    justify-content space-between
+    flex-direction column
     
-    // Layout
-    .row {
-        display flex
-        justify-content space-between
-        flex-direction column
-        
-        margin-bottom 2rem
-        .left {
-            margin-bottom 1rem
+    margin-bottom 2rem
+    &__left {
+        margin-bottom 1rem
+        &__title {
+            font-size 1.2rem
+            opacity 0.3
+        }
+    }
+    // ---------------------------------------
+    +above(970px){
+        flex-direction row
+        &__left {
+            width 100%
+            max-width 170px
+            text-align right
             h2 {
                 font-size 1.2rem
                 opacity 0.3
+                position relative
+                // top 2px
             }
         }
-        // ---------------------------------------
-        +above(970px){
-            flex-direction row
-            .left {
-                width 100%
-                max-width 170px
-                text-align right
-                h2 {
-                    font-size 1.2rem
-                    opacity 0.3
-                    position relative
-                    // top 2px
-                }
-            }
-            .right {
-                width 100%
-                max-width 570px
-            }
+        &__right {
+            width 100%
+            max-width 570px
         }
+    }
+}
+
+// -----------------------------  
+.header {
+    text-align right
+    margin-bottom 3rem
+    &__title {
+        max-width initial
+        margin-bottom 0.2em
+    }
+    &__description {
+        font-size 1rem
+    }
+}
+.resume-intro {
+    &__title {
+        top -2px
+    }
+    &__introduction {
+        font-size 0.83rem
+    }
+}
+.employment {
+    &__title {
+        top 2px
+    }
+}
+// --------------------------
+.company {
+    position relative
+    top -2px
+    &__name, &__position {
+        display inline-block
+        line-height 1.625
+        margin 0
+        font-size 1rem
+    }
+    &__position {
+        margin-left 0.2rem
+    }
+    &__name {
+        // font-weight 700
+        color #1F3751
+    }
+    &__period {
+        opacity 0.5
+    }
+    &__website {
+        margin-left 0.2rem
+        // text-transform uppercase
+        font-size 0.7rem
+        font-weight 500
+    }
+    &__introduction {
+        margin 0.5rem 0 0
     }
     
-    // -----------------------------  
-    header {
-        text-align right
-        margin-bottom 3rem
-        h1 {
-            max-width initial
-            margin-bottom 0.2em
-        }
-        p {
-            font-size 1rem
-        }
-    }
-    .resume-intro {
-        h2 {
-            top -2px
-        }
-        p {
-            font-size 0.83rem
+    &:not(:last-child) {
+        padding-bottom 1.5rem
+        margin-bottom 1.5rem
+        position relative
+        &:after {
+            content ""
+            display block
+            position absolute
+            left 0
+            bottom 0
+            width 100px
+            height 2px
+            background-color $color-font
+            opacity 0.2
         }
     }
-    .employment {
-        h2 {
-            top 2px
+
+    .projects {
+        margin-top 1rem
+        &__title {
+            font-weight 300
+            margin-bottom 0.5rem
+            opacity 0.5
         }
-    }
-    // --------------------------
-    .company {
-        &:not(:last-child) {
-            padding-bottom 1.5rem
-            margin-bottom 1.5rem
-            position relative
-            &:after {
-                content ""
-                display block
-                position absolute
-                left 0
-                bottom 0
-                width 100px
-                height 2px
-                background-color $color-font
-                opacity 0.2
-            }
-        }
-        .header {
-            .name, .position {
+        .project {
+            &__name, &__link {
                 display inline-block
                 line-height 1.625
-                margin 0
-                font-size 1rem
+                font-size .83rem
             }
-            .position {
-                margin-left 0.2rem
+            &:not(:last-child){
+                margin-bottom 1rem
             }
-            .name {
-                font-weight 700
-                color #1F3751
+            &__name {
+                position relative
+                padding-left 1rem
+                &:before {
+                    content "-"
+                    position absolute
+                    left 0
+                }
             }
-            .period {
-                opacity 0.5
-            }
-            .website {
-                margin-left 0.2rem
+            &__link {
                 // text-transform uppercase
                 font-size 0.7rem
                 font-weight 500
-            }
-            .introduction {
-                margin 0.5rem 0 0
-            }
-        }
-        .projects {
-            margin-top 1rem
-            h4 {
-                font-weight 300
-                margin-bottom 0.5rem
-                opacity 0.5
-            }
-            .project {
-                .name, .link {
-                    display inline-block
-                    line-height 1.625
-                    font-size .83rem
-                }
-                &:not(:last-child){
-                    margin-bottom 1rem
-                }
-                .name {
-                    position relative
-                    padding-left 1rem
-                    &:before {
-                        content "-"
-                        position absolute
-                        left 0
-                    }
-                }
-                .link {
-                    // text-transform uppercase
-                    font-size 0.7rem
-                    font-weight 500
-                    margin-left 0.5rem
-                }
+                margin-left 0.5rem
             }
         }
     }
-    
-    // ------------------------------------------
-    .education {
-        .formal {
-            .institution {
-                &:not(:last-child){
-                    margin-bottom 0.5rem
-                }
-            }
-            +above(970px){
-                margin-top 8px
-            }
+}
+// ------------------------------------------
+
+.personal-projects {
+    .project {
+        margin-top 1px
+        &__name, &__link {
+            display inline-block
         }
-        .courses {
-            margin-top 1rem
-            h3 {
-                font-weight 700
+        &__name {
+            font-size 1rem
+            color #1F3751
+        }
+        &__link {
+            font-size 0.7rem
+            font-weight 500
+            margin-left 0.5rem
+        }
+    }
+}
+
+// ------------------------------------------
+.education {
+    &__formal {
+        .institution {
+            &:not(:last-child){
                 margin-bottom 0.5rem
             }
-            .course {
-                &:not(:last-child){
-                    margin-bottom 0.5rem
-                }
-                +above(970px){
-                    h4, p {
-                        display inline-block
-                    }
-                }
+        }
+        +above(970px){
+            margin-top 8px
+        }
+    }
+    // .courses {
+    //     margin-top 1rem
+    //     h3 {
+    //         font-weight 700
+    //         margin-bottom 0.5rem
+    //     }
+    //     .course {
+    //         &:not(:last-child){
+    //             margin-bottom 0.5rem
+    //         }
+    //         +above(970px){
+    //             h4, p {
+    //                 display inline-block
+    //             }
+    //         }
+    //     }
+    // }
+}
+.skills {
+    .slill-list {
+        margin 2px 0 0 
+        &__item {
+            position relative
+            padding-left 1rem
+            &:before {
+                content "-"
+                position absolute
+                left 0
             }
         }
     }
+}
 }
