@@ -53,13 +53,14 @@
 
 .section {
     position relative
-    margin-top 6rem
+    margin-top 8rem
     &__title {
-        opacity 0.05
+        opacity 0.08
         font-size 3rem
-        font-weight 700
+        font-weight 200
         position absolute
-        top -3.2rem
+        top -4.2rem
+        letter-spacing -0.02em
     }
     &__block {
         position relative
@@ -117,13 +118,17 @@
         display flex
         align-items flex-end
     }
-    .section__block {
-        padding-top 1rem
-    }
+    // .section__block {
+    //     padding-top 1rem
+    // }
     +below(770px){
         .section__block__img {
             margin-bottom 1rem
         }
+    }
+    .profile-picture {
+        // width 270px
+        // border-radius 50%
     }
 }
 
@@ -212,7 +217,7 @@
 
 .education {
     &__list {
-        margin 2rem 0
+        margin 0
     }
     &__institution {
         margin-top 1rem
@@ -236,6 +241,7 @@
     &__list {
         list-style none
         padding 0
+        margin 0
     }
     &__item {
         position relative

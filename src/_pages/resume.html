@@ -14,7 +14,7 @@ class: resume
     <div class="section__block">
         <div class="row">
             <div class="column c-3">
-                <div class="section__block__img">
+                <div class="section__block__img profile-picture">
                     <img src="/assets/img/resume/profile-picture.jpg" alt="">
                 </div>
             </div>
@@ -31,7 +31,7 @@ class: resume
         {% for company in site.data.cv.employment %}
         <div class="row company {{ company.name | split: ' ' | first | downcase }}">
             <div class="column c-3">
-                <a href="{{ company.url }}" class="section__block__img section__block__logo section__block__link">
+                <a href="{{ company.url }}" class="section__block__img section__block__logo section__block__link" target="_blank">
                     <img src="/assets/img/resume/companies/{{ company.name | split: ' ' | first | downcase }}.png" alt="{{ company.name }} logo">
                 </a>
             </div>
@@ -90,12 +90,12 @@ class: resume
 </div>
 
 <div class="section personal-projects">
-    <h2 class="section__title">Personal projects</h2>
+    <h2 class="section__title">Personal stuff</h2>
     <div class="section__block personal-projects__list">
         {% for personal-project in site.data.cv.personal-projects %}
             <div class="row personal-project">
                 <div class="column c-3">
-                    <a href="{{ personal-project.url }}" class="section__block__img section__block__logo section__block__link">
+                    <a href="{{ personal-project.url }}" class="section__block__img section__block__logo section__block__link" target="_blank">
                         <img src="/assets/img/resume/projects/designers-road.png" alt="{{ personal-project.name}} logo">
                     </a>
                 </div>
