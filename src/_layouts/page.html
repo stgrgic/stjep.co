@@ -3,14 +3,15 @@ layout: index
 class: page
 ---
 
-<div class="paper">
-    <div class="inner">
-        {% include nav.html %}
-        <main>
-            <article>
-                {{ content }}
-            </article>
+<div class="content--left">
+    {% include nav.html %}
+</div>
+
+<div class="content--right">
+    <div class="content--right__paper">
+        <main class="content--right__inner">
+            {{ content }}
         </main>
-        {% include site-footer.html %}
     </div>
+    {% include site-footer.html %}
 </div>

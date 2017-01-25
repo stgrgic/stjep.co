@@ -1,11 +1,12 @@
-<footer>
-    <ul class="links horizontal">
-      <li><a href="http://bit.ly/sg-dribbble" target="_blank">Dribbble</a></li>
-      <li><a href="http://bit.ly/sg-behance" target="_blank">Behance</a></li>
-      <li><a href="http://bit.ly/sg-linked-in" target="_blank">LinkedIn</a></li>
-      <li><a href="http://bit.ly/sg-twitter" target="_blank">Twitter</a></li>
-      <li><a href="http://bit.ly/sg-instagram" target="_blank">Instagram</a></li>
-      <li><a href="http://bit.ly/sg-github" target="_blank">Github</a></li>
-    </ul>
-    <p class="small">Design & Code by Stjepan Grgic.<br>Hosted on GitHub Pages. Find sourcode <a href="https://github.com/stjepco/stjep.co">here</a>.</p>
+<footer class="site-footer">
+    <nav class="footer-nav">
+        <ul class="footer-nav__list">
+            {% for link in site.data.links.social-links %}
+            <li class="footer-nav__item">
+                <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <p class="site-footer__notice">Design & Code by Stjepan Grgic.<br>Hosted on GitHub Pages. Find sourcode <a href="https://github.com/stjepco/stjep.co">here</a>.</p>
 </footer>

@@ -1,215 +1,249 @@
+
 .resume {
-    
-main {
-    font-size 0.83rem
-}
-p {
-    margin 0
+    &__text {
+        fluid-type(16px, 18px)
+    }
+
 }
 
 // Layout
 .row {
+    // background-color #afa
     display flex
     justify-content space-between
     flex-direction column
-    
-    margin-bottom 2rem
-    &__left {
-        margin-bottom 1rem
-        &__title {
-            font-size 1.2rem
-            opacity 0.3
-        }
+    // clearfix()
+    .column {
+        // background-color #ffa
     }
-    // ---------------------------------------
-    +above(970px){
+    .c-3, .c-7 {
+        width 100%
+    }
+
+    +above(770px) {
         flex-direction row
-        &__left {
-            width 100%
-            max-width 170px
-            text-align right
-            h2 {
-                font-size 1.2rem
-                opacity 0.3
-                position relative
-                // top 2px
-            }
+        .c-3 {
+            width 27.8350515%;
         }
-        &__right {
-            width 100%
-            max-width 570px
+        .c-7 {
+            width 69.0721649%
+        }
+        &.project {
+            .c-3 {
+                width 100px;
+            }
+            .c-7 {
+                width calc(100% - 130px)
+            }
         }
     }
 }
 
-// -----------------------------  
-.header {
+.resume-header {
     text-align right
-    margin-bottom 3rem
     &__title {
-        max-width initial
         margin-bottom 0.2em
+        font-size 2.5rem
+        font-weight 700
     }
     &__description {
         font-size 1rem
     }
 }
-.resume-intro {
-    &__title {
-        top -2px
-    }
-    &__introduction {
-        font-size 0.83rem
-    }
-}
-.employment {
-    &__title {
-        top 2px
-    }
-}
-// --------------------------
-.company {
+
+.section {
     position relative
-    top -2px
-    &__name, &__position {
-        display inline-block
-        line-height 1.625
-        margin 0
-        font-size 1rem
+    margin-top 6rem
+    &__title {
+        opacity 0.05
+        font-size 3rem
+        font-weight 700
+        position absolute
+        top -3.2rem
+    }
+    &__block {
+        position relative
+        z-index 2
+        &__img {
+            border-radius 2px
+            overflow hidden
+            // Gives back rounded corners on small screens
+            display inline-block
+        }
+        &__logo {
+            border-radius 2px
+            overflow hidden
+            
+            background-color #fff
+            width 100%
+            height 140px
+            display flex
+            align-items center
+            justify-content center
+            box-shadow: 0 0 0 1px #DCE0E6;
+            img {
+                max-width 50%
+                max-height 50%
+                height auto
+                width auto
+            }
+        }
+        &__link {
+            transition box-shadow 0.3s ease
+            &:hover {
+                box-shadow: 0 4px 20px 1px #DCE0E6;
+            }
+        }
+        &__title {
+            font-size 1.63em
+            color #1F3751
+            font-weight 600
+        }
+        &__header {
+            margin 3.6rem 0 2rem
+            +below(770px){
+                margin-top 1rem
+            }
+        }
+    }
+}
+
+.introduction {
+    
+    .c-3 {
+        font-size 0
+    }
+    .c-7 {
+        display flex
+        align-items flex-end
+    }
+    .section__block {
+        padding-top 1rem
+    }
+    +below(770px){
+        .section__block__img {
+            margin-bottom 1rem
+        }
+    }
+}
+
+.company {
+    margin-bottom 2rem
+    +below(770px){
+        margin-top 3rem
+    }
+    &__meta {
+        margin 0.2rem 0 0.5rem
+        line-height 1.1
     }
     &__position {
-        margin-left 0.2rem
-    }
-    &__name {
-        // font-weight 700
         color #1F3751
+        margin-right 0.5rem
     }
     &__period {
+        font-size 0.8rem
+        font-weight 400
         opacity 0.5
-    }
-    &__website {
-        margin-left 0.2rem
-        // text-transform uppercase
-        font-size 0.7rem
-        font-weight 500
-    }
-    &__introduction {
-        margin 0.5rem 0 0
-    }
-    
-    &:not(:last-child) {
-        padding-bottom 1.5rem
-        margin-bottom 1.5rem
-        position relative
-        &:after {
-            content ""
-            display block
-            position absolute
-            left 0
-            bottom 0
-            width 100px
-            height 2px
-            background-color $color-font
-            opacity 0.2
-        }
+        white-space nowrap
     }
 
     .projects {
-        margin-top 1rem
         &__title {
-            font-weight 300
-            margin-bottom 0.5rem
+            font-size 1rem
+            font-weight 400
             opacity 0.5
+            margin-bottom 1rem
         }
         .project {
-            &__name, &__link {
+            margin-bottom 2rem
+            &__img {
+                border-radius 2px
+                overflow hidden
+                // Gives back rounded corners on small screens
                 display inline-block
-                line-height 1.625
-                font-size .83rem
-            }
-            &:not(:last-child){
-                margin-bottom 1rem
-            }
-            &__name {
-                position relative
-                padding-left 1rem
-                &:before {
-                    content "-"
-                    position absolute
-                    left 0
+                width 100px
+                height 100px
+                background-color #fff
+                display flex
+                align-items center
+                justify-content center
+                box-shadow: 0 0 0 1px #DCE0E6;
+                img {
+                    max-width 50%
+                    max-height 50%
+                    height auto
+                    width auto
                 }
             }
+            &__name {
+                font-size 1rem
+                font-weight 600
+                color #1F3751
+                margin 1rem 0 0.5rem
+                
+            }
             &__link {
-                // text-transform uppercase
-                font-size 0.7rem
-                font-weight 500
-                margin-left 0.5rem
+                transition box-shadow 0.3s ease
+                &:hover {
+                    box-shadow: 0 4px 20px 1px #DCE0E6;
+                }
             }
         }
     }
+    
+    // Fixes for companies
+    &.vibby {
+        .project__img img {
+            max-width 100%
+            max-height 100%
+        }
+    }
+    &.grey {
+        .project__vip .project__img  {
+            overflow visible
+            img {
+                max-width 120%
+                max-height 120%
+            }
+        }
+
+    }
 }
-// ------------------------------------------
+
+.education {
+    &__list {
+        margin 2rem 0
+    }
+    &__institution {
+        margin-top 1rem
+        &__name {
+            font-size 1rem
+            font-weight 600
+            color #1F3751
+        }
+    }
+}
 
 .personal-projects {
     .project {
-        margin-top 1px
-        &__name, &__link {
-            display inline-block
-        }
-        &__name {
-            font-size 1rem
-            color #1F3751
-        }
-        &__link {
-            font-size 0.7rem
-            font-weight 500
-            margin-left 0.5rem
+        &__description {
+            margin-top 0.5rem
         }
     }
 }
 
-// ------------------------------------------
-.education {
-    &__formal {
-        .institution {
-            &:not(:last-child){
-                margin-bottom 0.5rem
-            }
-        }
-        +above(970px){
-            margin-top 8px
-        }
-    }
-    // .courses {
-    //     margin-top 1rem
-    //     h3 {
-    //         font-weight 700
-    //         margin-bottom 0.5rem
-    //     }
-    //     .course {
-    //         &:not(:last-child){
-    //             margin-bottom 0.5rem
-    //         }
-    //         +above(970px){
-    //             h4, p {
-    //                 display inline-block
-    //             }
-    //         }
-    //     }
-    // }
-}
 .skills {
-    .slill-list {
-        margin 2px 0 0 
-        &__item {
-            position relative
-            padding-left 1rem
-            &:before {
-                content "-"
-                position absolute
-                left 0
-            }
+    &__list {
+        list-style none
+        padding 0
+    }
+    &__item {
+        position relative
+        padding-left 1rem
+        &:before {
+            content "-"
+            position absolute
+            left 0
         }
     }
-}
 }

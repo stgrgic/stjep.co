@@ -4,7 +4,7 @@
     {% include head.html %}
 </head>
 <body class="experiment {{ page.path | remove:'_experiments/' | remove:'.html' }}">
-    <div class="content">
+    <div class="experiment__content">
         {% include experiment-header.html %}
         {{ content }}
     </div>

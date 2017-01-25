@@ -1,62 +1,62 @@
 // Navbar
 
-nav {
-    display flex
-    ul {
+.g-logo {
+    line-height 1
+    
+    // Only svg and a can be used as tags in css
+    a {
+        display inline-block
+        font-size 0
+        &:after {
+            display none
+        }
+    }
+    svg {
+        font-size 0
+        width 41px
+        height 42px
+        path {
+            fill $color-link
+        }
+        &:hover path{
+            fill $color-link-hover
+        }
+    }
+}
+
+.main-nav {
+    &__list {
         list-style none
-        display flex
-        align-items center
-        padding 0
+        padding-left 6vw
         margin 0
-        width 100%
-        li {
+    }
+    .g-logo {
+        margin-bottom 1rem
+    }
+    &__item {
+        &.active {
+            position relative
+            &:before {
+                content ''
+                position absolute
+                display block
+                width 1rem
+                height 2px
+                background-color rgba(#000, 0.1)
+                left -1.5rem
+                top 50%
+            }
+        }
+        +below(970px){
+            display inline-block
             margin-right 1rem
-            a {
-                position relative
-                transition all 0.3s ease
-                &:after {
-                    display block
-                    content ""
-                    position absolute
-                    bottom -5px
+            &.active {
+                &:before {
                     left 0
-                    width 20px
-                    height 2px
-                    background-color $color-font
-                    opacity 0
-                    transition all 0.3s ease
-                }
-            }
-            .active {
-                &:after {
-                    opacity 0.2
-                }
-            }
-            &.item-home {
-                order -1
-                line-height 1
-                // margin-right auto
-                margin-right 2rem
-                a {
-                    display inline-block
-                    font-size 0
-                    &:after {
-                        display none
-                    }
-                    svg {
-                        font-size 0
-                        width 41px
-                        height 42px
-                        path {
-                            fill $color-link
-                        }
-                        &:hover path{
-                            fill $color-link-hover
-                        }
-                    }
+                    top auto
+                    bottom 0
                 }
             }
         }
     }
-
 }
