@@ -15,7 +15,6 @@
                 },
                 {
                     "name": "Agrivi",
-                    // "url": "/portfolio/Agrivi/",
                     "description": "Agrivi is agri-tech startup from Croatia. I worked on redesigning their brand identity:  a new logo, font, color palette, visual language, and imagery. My primary job was to redesign web application interface, so I worked with product guys to deliver the best experience for their users. Lastly, I worked on landing page redesign as well."
                 },
                 {
@@ -45,7 +44,7 @@
             ]
         },
         {
-            "name": "Gray Entourage",
+            "name": "Grey Entourage",
             "position": "Screen Designer",
             "period": "July 2014 - March 2015",
             "website": "http://entg.co/",
