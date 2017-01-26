@@ -1,0 +1,16 @@
+<svg width="100px" height="100px" viewBox="616 1966 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="100" height="100"></rect>
+    </defs>
+    <g id="vibby" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(616.000000, 1966.000000)">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Mask"></g>
+        <path d="M68.0911491,44.9421319 C69.5448539,45.7396081 69.5428575,47.0336675 68.0911491,47.8300485 L39.6321653,63.4421319 C38.1784606,64.2396081 37,63.5473819 37,61.8895662 L37,30.8826142 C37,29.2276797 38.1804569,28.5336675 39.6321653,29.3300485 L68.0911491,44.9421319 Z" id="Triangle" fill="#2EA2FF" mask="url(#mask-2)"></path>
+        <rect id="Rectangle-6" fill="#677EFF" opacity="0.100000001" mask="url(#mask-2)" x="1" y="85" width="98" height="15"></rect>
+        <rect id="Rectangle-6" fill="#677EFF" mask="url(#mask-2)" x="0" y="85" width="32" height="15"></rect>
+        <rect id="Rectangle-6-Copy" fill="#677EFF" mask="url(#mask-2)" x="47" y="85" width="27" height="15"></rect>
+        <rect id="Rectangle-6-Copy-2" fill="#677EFF" mask="url(#mask-2)" x="87" y="85" width="13" height="15"></rect>
+    </g>
+</svg>

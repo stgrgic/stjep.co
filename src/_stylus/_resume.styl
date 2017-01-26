@@ -76,24 +76,30 @@
             overflow hidden
             
             background-color #fff
+            // width 100%
+            // max-height 140px
+            display flex
+            // align-items center
+            justify-content flex-end
+            // justify-content center
+            // box-shadow: 0 0 0 1px #DCE0E6;
+                
+            max-width 270px
             width 100%
             height 140px
-            display flex
-            align-items center
-            justify-content center
-            box-shadow: 0 0 0 1px #DCE0E6;
             img {
-                max-width 50%
-                max-height 50%
-                height auto
-                width auto
+                // max-width 270px
+                // max-height 140px
+                // height auto
+                // width 100%
             }
         }
         &__link {
-            transition box-shadow 0.3s ease
-            &:hover {
-                box-shadow: 0 4px 20px 1px #DCE0E6;
-            }
+            // transition box-shadow 0.3s ease
+            // // box-shadow: 0 4px 20px 1px rgba(#DCE0E6, 0.8)
+            // &:hover {
+            //     box-shadow: 0 4px 40px 1px rgba(#DCE0E6, 0.6)
+            // }
         }
         &__title {
             font-size 1.63em
@@ -172,10 +178,10 @@
                 display flex
                 align-items center
                 justify-content center
-                box-shadow: 0 0 0 1px #DCE0E6;
+                // box-shadow: 0 0 0 1px #DCE0E6;
                 img {
-                    max-width 50%
-                    max-height 50%
+                    max-width 100%
+                    max-height 100%
                     height auto
                     width auto
                 }
@@ -187,12 +193,12 @@
                 margin 1rem 0 0.5rem
                 
             }
-            &__link {
-                transition box-shadow 0.3s ease
-                &:hover {
-                    box-shadow: 0 4px 20px 1px #DCE0E6;
-                }
-            }
+            // &__link {
+            //     transition box-shadow 0.3s ease
+            //     &:hover {
+            //         box-shadow: 0 4px 30px 1px rgba(#DCE0E6, 0.8);
+            //     }
+            // }
         }
     }
     
@@ -203,16 +209,16 @@
             max-height 100%
         }
     }
-    &.grey {
-        .project__vip .project__img  {
-            overflow visible
-            img {
-                max-width 120%
-                max-height 120%
-            }
-        }
+    // &.grey-entourage {
+    //     .project__vip-xmas-card .project__img  {
+    //         overflow visible
+    //         img {
+    //             max-width 120%
+    //             max-height 120%
+    //         }
+    //     }
 
-    }
+    // }
 }
 
 .education {

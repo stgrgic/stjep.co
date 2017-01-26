@@ -29,10 +29,10 @@ class: resume
     <h2 class="section__title">Employment</h2>
     <div class="section__block employment__companies">
         {% for company in site.data.cv.employment %}
-        <div class="row company {{ company.name | split: ' ' | first | downcase }}">
+        <div class="row company {{ company.id }}">
             <div class="column c-3">
                 <a href="{{ company.url }}" class="section__block__img section__block__logo section__block__link" target="_blank">
-                    <img src="/assets/img/resume/companies/{{ company.name | split: ' ' | first | downcase }}.png" alt="{{ company.name }} logo">
+                    <img src="/assets/img/resume/companies/{{ company.id }}-logo.svg" alt="{{ company.name }}">
                 </a>
             </div>
             <div class="column c-7">
@@ -48,10 +48,10 @@ class: resume
                     <section class="projects">
                         <h4 class="projects__title">Featured projects</h4>
                         {% for project in company.projects %}
-                            <div class="row project project__{{ project.name | split: ' ' | first | downcase }}">
+                            <div class="row project project__{{ project.id }}">
                                 <div class="column c-3">
                                     <a href="{{ project.url }}" class="project__img project__link" target="_blank">
-                                        <img src="/assets/img/resume/projects/{{ project.name | split: ' ' | first | downcase }}.png" alt="{{ project.name }} logo">
+                                        <img src="/assets/img/resume/projects/{{ project.id }}.svg" alt="{{ project.name }} logo">
                                     </a>
                                 </div>
                                 <div class="column c-7">
@@ -96,7 +96,7 @@ class: resume
             <div class="row personal-project">
                 <div class="column c-3">
                     <a href="{{ personal-project.url }}" class="section__block__img section__block__logo section__block__link" target="_blank">
-                        <img src="/assets/img/resume/projects/designers-road.png" alt="{{ personal-project.name}} logo">
+                        <img src="/assets/img/resume/projects/{{ personal-project.id }}-logo.svg" alt="{{ personal-project.name}} logo">
                     </a>
                 </div>
                 <div class="column c-7">
