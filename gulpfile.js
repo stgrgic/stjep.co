@@ -107,7 +107,7 @@ gulp.task("build", function(cb) {
 });
 
 gulp.task("clean", function(){
-    return del("dist");
+    return del(["dist", ".publish"]);
 })
 
 
@@ -136,40 +136,12 @@ gulp.task("default", ["build"], function() {
 });
 
 
-gulp.task("deploy", function() {
+gulp.task("gh-pages", function() {
   return gulp.src(basePaths.dest + "**/*")
     .pipe(ghPages());
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+gulp.task("deploy", function(cb) {
+    runSequence("clean", "build", "gh-pages", cb);
+});
 
