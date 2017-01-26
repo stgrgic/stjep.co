@@ -41,6 +41,7 @@ class: resume
                     <p class="company__meta">
                         <span class="company__position">{{ company.position }}</span>
                         <span class="company__period">{{ company.period }}</span>
+                        <a href="{{ company.url }}" class="company__url" target="_blank">Website</a>
                     </p>                    
                     <p class="company__introduction resume__text">{{ company.introduction }}</p>
                 </div>
@@ -56,6 +57,7 @@ class: resume
                                 </div>
                                 <div class="column c-7">
                                     <h5 class="project__name">{{ project.name }}</h5>
+                                    <a href="{{ project.url }}" class="project__url" target="_blank"> Check it out</a>
                                     <p class="project__description resume__text">{{ project.description }}</p>
                                 </div>
                             </div>
