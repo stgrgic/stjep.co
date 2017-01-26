@@ -1,8 +1,8 @@
-<header>
-    <p><a href="/lab/">Back to Lab</a></p>
-    <h1>{{page.title}}</h1>
+<header class="experiment__header">
+    <a href="/lab/" class="experiment__back">Back to Lab</a>
+    <h1 class="experiment__headline">{{page.headline}}</h1>
     <p class="meta">
-        <span class="number">Expriment 01</span>
+        <span class="number">Experiment 01</span> <!-- {{ page.path | remove: "_experiments/" | split: "-" }} -->
         <time datetime="{{ page.date | date: "%m-%d-%Y" }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>
 
         {% if page.status == "in-progress" %}

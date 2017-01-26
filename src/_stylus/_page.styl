@@ -1,13 +1,33 @@
 //
 
-h1 {
-    margin-bottom 0.5em
-    line-height 1.2
-    max-width 570px
-    letter-spacing -0.01em
+.page {
+    &__title {
+        margin-bottom 0.5em
+        line-height 1.2
+        max-width 570px
+        letter-spacing -0.01em
+        fluid-type(28px, 58px)
+        font-weight 700
+    }
+}
+
+.home {
+    p{
+        margin-bottom 1rem
+    }
+    .page__title {
+        // margin-top 20vh
+    }
+    .content--right__paper {
+        padding 18vh 6vw 12vh
+    }
+    .content--right__inner {
+        max-width 670px
+    }
 }
 
 .lab {
+
     .experiment-list {
         counter-reset experiment-list-counter
         list-style-type none
@@ -37,29 +57,5 @@ h1 {
                 border-radius 3px
             }
         }
-    }
-}
-
-footer {
-    max-width 800px
-    margin 4rem auto 0
-    border-top 1px solid #eee
-    padding-top 1rem
-    ul {
-        display flex
-        flex-wrap wrap
-        justify-content center
-        li {
-            margin-right 1rem
-            a {
-                font-size 0.7rem
-            }
-        }
-    }
-    .small {
-        font-size 0.7rem
-        text-align center
-        padding 0
-        margin 1rem 0 0
     }
 }
