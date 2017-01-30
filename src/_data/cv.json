@@ -7,19 +7,19 @@
             "period": "January 2016 - present",
             "url": "http://bit.ly/underlayer-design",
             "id": "underlayer",
-            "introduction": "I have started underlayer studio with hopes I will be able to run business all by myself. I worked on few nice projects. But, it was a tough year. I learned a lot. I saw how business requires a lot of effort so now I can appreciate business people much more.",
+            "introduction": "I have started underlayer studio with hopes I will be able to run a business all by myself. I worked on a few nice projects. But, it was a tough year. I learned a lot. I saw how business requires a lot of effort so now I can appreciate business people much more.",
             "projects": [
                 {
                     "name": "Memgraph",
                     "url": "http://bit.ly/2jqAJjz",
                     "id": "memgraph",
-                    "description": "MemGraph is a young startup that is building next generation graph database system. I designed their logo and overall design language fo app. Also, I was working on designing and coding a web interface that will be used for querying database, monitoring machines, and monitoring performances."
+                    "description": "MemGraph is a young startup that is building next generation graph database system. I designed their logo and overall design language fo app. Also, I was working on designing and coding a web interface that will be used for querying the database, monitoring machines, and monitoring performances."
                 },
                 {
                     "name": "Agrivi",
                     "url": "http://bit.ly/2jqswvS",
                     "id": "agrivi",
-                    "description": "Agrivi is agri-tech startup from Croatia. I worked on redesigning their brand identity:  a new logo, font, color palette, visual language, and imagery. My primary job was to redesign web application interface, so I worked with product guys to deliver the best experience for their users. Lastly, I worked on landing page redesign as well."
+                    "description": "Agrivi is agri-tech startup from Croatia. I worked on redesigning their brand identity:  a new logo, font, color palette, visual language, and imagery. My primary job was to redesign the web application interface, so I worked with product guys to deliver the best experience for their users. Lastly, I worked on the landing page redesign as well."
                 },
                 {
                     "name": "nickel&swan",
@@ -35,19 +35,19 @@
             "period": "March 2015 - January 2016",
             "url": "http://bit.ly/2jqr9NC",
             "id": "vibby",
-            "introduction": "I was a lead product designer. I was involved in branding, introducing new product concepts, designing experience and interface, as well as coding HTML and CSS architecture for this large scale web application. Year almost passed, and I saw I gave all that I could to the idea, so I decided i should try to go on my own.",
+            "introduction": "I was a lead product designer. I was involved in branding, introducing new product concepts, designing experience and interface, as well as coding HTML and CSS architecture of this large scale web application. Year almost passed, and I saw I gave all that I could to the idea, so I decided I should try to go on my own.",
             "projects": [
                 {
                     "name": "Vibby player",
                     "url": "http://bit.ly/2k4EpIR",
                     "id": "vibby-player",
-                    "description": "Video player that introduced 'partial' video bits. It allowed users to watch and comment only on important/highlighted parts of the video."
+                    "description": "Video player that introduced “partial” video bits. It allowed users to watch and comment only on important/highlighted parts of the video."
                 },
                 {
                     "name": "Vib creation proces",
                     "url": "http://bit.ly/2ktXEw1",
                     "id": "vib-creation",
-                    "description": "A simple tree step process user had to go trough in order to create a “vib” - a shorter form of a video created from its parts."
+                    "description": "A simple three step process user had to go through in order to create a “vib” - a shorter form of a video created from its parts."
                 }
             ]
         },
@@ -57,13 +57,13 @@
             "period": "July 2014 - March 2015",
             "url": "http://bit.ly/2jy4n3N",
             "id": "grey-entourage",
-            "introduction": "In joint venture Gray Entourage, I was involved in advertising projects ranging from designing online advertising materials for clients like Microsoft, Erste Bank, Vipnet and Tomato, to designing urls for TZ Istra and Allianz. After almost a year, and beautiful time I have spent with the team, I got chance to work fro startup that I couldn't reject.",
+            "introduction": "In joint venture Gray Entourage, I was involved in advertising projects ranging from designing online advertising materials for clients like Microsoft, Erste Bank, Vipnet and Tomato, to designing urls for TZ Istra and Allianz. After almost a year, and beautiful time I have spent with the team, I got a chance to work fro startup that I couldn't reject.",
             "projects": [
                 {
                     "name": "Vip Xmas Card",
                     "url": "http://on.be.net/1X0ZZM4",
                     "id": "vip-xmas-card",
-                    "description": "I was involved in whole process: from the beginning of ideation and character development to UI design and character illustration."
+                    "description": "I was involved in the whole process: from the beginning of ideation and character development to UI design and character illustration."
                 },
                 {
                     "name": "Share Istria",
@@ -79,7 +79,7 @@
             "period": "February 2014 - April 2014",
             "id": "virtus-dizajn",
             "url": "http://bit.ly/2k4x7Vu",
-            "introduction": "It was my lucky job. They gave me chance me to come back to Zagreb after bad family situation. I worked on a couple of nice urls that I designed and coded. However, the way they have run business didn't fit my wiev, so I  went on the search for another job."
+            "introduction": "It was my lucky job. They gave me chance me to come back to Zagreb after bad family situation. I worked on a couple of nice urls that I designed and coded. However, the way they have run business didn't fit my view, so I went on the search for another job."
         },
         {
             "name": "Tocka Agency",
@@ -87,7 +87,7 @@
             "period": "July 2013 - September 2013",
             "id":"tocka",
             "url": "http://bit.ly/2ku0aCA",
-            "introduction": "My first real job. It was short, but I had great experience. I was learning from them, and made friends along the way."
+            "introduction": "My first real job. It was short, but I had a great experience. I was learning from them, and made friends along the way.."
         }
     ],
     "education":{
