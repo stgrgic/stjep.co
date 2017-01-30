@@ -3,11 +3,16 @@
     "employment": [
         {
             "name": "Underlayer",
-            "position": "Founder, designer and develper",
+            "position": "Founder, designer and developer",
             "period": "January 2016 - present",
             "url": "http://bit.ly/underlayer-design",
             "id": "underlayer",
             "introduction": "I have started underlayer studio with hopes I will be able to run a business all by myself. I worked on a few nice projects. But, it was a tough year. I learned a lot. I saw how business requires a lot of effort so now I can appreciate business people much more.",
+            "learned": [
+                "How starting my own company looks like.",
+                "How to run my own company looks like, and how that can be hard.",
+                "How to better organise myself."
+            ],
             "projects": [
                 {
                     "name": "Memgraph",
@@ -35,7 +40,14 @@
             "period": "March 2015 - January 2016",
             "url": "http://bit.ly/2jqr9NC",
             "id": "vibby",
-            "introduction": "I was a lead product designer. I was involved in branding, introducing new product concepts, designing experience and interface, as well as coding HTML and CSS architecture of this large scale web application. Year almost passed, and I saw I gave all that I could to the idea, so I decided I should try to go on my own.",
+            "introduction": "Vibby is US based startup, I had a chance to work as lead product designer. I was involved in branding, introducing new product concepts, designing experience and interface, as well as coding HTML and CSS architecture of this large scale web application. Year almost passed, and I saw I gave all that I could to the idea, so I decided I should try to go on my own.",
+            "learned": [
+                "How working in a startup looks like.",
+                "How to design a product from the ground.",
+                "How to be a design lead.",
+                "How to code large scale front-end architecture.",
+                "How to work with the team of people who are as old as I."
+            ],
             "projects": [
                 {
                     "name": "Vibby player",
@@ -58,6 +70,13 @@
             "url": "http://bit.ly/2jy4n3N",
             "id": "grey-entourage",
             "introduction": "In joint venture Gray Entourage, I was involved in advertising projects ranging from designing online advertising materials for clients like Microsoft, Erste Bank, Vipnet and Tomato, to designing urls for TZ Istra and Allianz. After almost a year, and beautiful time I have spent with the team, I got a chance to work fro startup that I couldn't reject.",
+            "learned": [
+                "How working in a big advertising agency looks like.",
+                "How to work simultaneously on 100 things.",
+                "I became Adobe Illustrator ninja.",
+                "How big clients' campaigns are made. Including everything from filming TV commercials to designing web banners.",
+                "Some “old” people are way cooler than “young” people."
+            ],
             "projects": [
                 {
                     "name": "Vip Xmas Card",
@@ -87,7 +106,7 @@
             "period": "July 2013 - September 2013",
             "id":"tocka",
             "url": "http://bit.ly/2ku0aCA",
-            "introduction": "My first real job. It was short, but I had a great experience. I was learning from them, and made friends along the way.."
+            "introduction": "My first real job. It was short, but I had a great experience. I was learning from them, and made friends along the way."
         }
     ],
     "education":{
@@ -133,13 +152,14 @@
         }
     ],
     "skills": [
-        "Design with a focus on user interfaces and interactions.",
+        "Design with a focus on user experience and interactions using Sketch and Photoshop.",
+        "Prototyping with InVision, Balsamiq mockups and Framer JS.",
         "Front-end development with strong orientation on semantic HTML and CSS (Stylus, SCSS) architecture.",
         "JavaScript - junior, but learning and growing every day.",
         "Comfortable using terminal,  git and phabricator.",
         "Illustration and drawing artisan.",
         "Photography geek.",
         "Decent experience with animation in After Effects. <a href='http://bit.ly/sg-animations'>Check out</a>.",
-        "Some experience with 3D modeling and animation."
+        "Some experience with 3D modeling."
     ]
 }
