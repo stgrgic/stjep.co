@@ -3,16 +3,8 @@ layout: index
 class: page
 ---
 
-<div class="content--left">
-    {% include nav.html %}
-</div>
+{% include nav.html %}
 
-<div class="content--right">
-    <div class="content--right__paper">
-        <main class="content--right__inner">
-            <h1 class="page__title">{{ page.headline }}</h1>
-            {{ content }}
-        </main>
-    </div>
-    {% include site-footer.html %}
-</div>
+{{ content }}
+
+<!-- {% include site-footer.html %} -->

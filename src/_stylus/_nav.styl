@@ -1,62 +1,62 @@
-// Navbar
+// // Navbar
 
-.g-logo {
-    line-height 1
+// .g-logo {
+//     line-height 1
     
-    // Only svg and a can be used as tags in css
-    a {
-        display inline-block
-        font-size 0
-        &:after {
-            display none
-        }
-    }
-    svg {
-        font-size 0
-        width 41px
-        height 42px
-        path {
-            fill $color-link
-        }
-        &:hover path{
-            fill $color-link-hover
-        }
-    }
-}
+//     // Only svg and a can be used as tags in css
+//     a {
+//         display inline-block
+//         font-size 0
+//         &:after {
+//             display none
+//         }
+//     }
+//     svg {
+//         font-size 0
+//         width 41px
+//         height 42px
+//         path {
+//             fill $color-link
+//         }
+//         &:hover path{
+//             fill $color-link-hover
+//         }
+//     }
+// }
 
-.main-nav {
-    &__list {
-        list-style none
-        padding-left 6vw
-        margin 0
-    }
-    .g-logo {
-        margin-bottom 1rem
-    }
-    &__item {
-        &.active {
-            position relative
-            &:before {
-                content ''
-                position absolute
-                display block
-                width 1rem
-                height 2px
-                background-color rgba(#000, 0.1)
-                left -1.5rem
-                top 50%
-            }
-        }
-        +below(970px){
-            display inline-block
-            margin-right 1rem
-            &.active {
-                &:before {
-                    left 0
-                    top auto
-                    bottom 0
-                }
-            }
-        }
-    }
-}
+// .main-nav {
+//     &__list {
+//         list-style none
+//         padding-left 6vw
+//         margin 0
+//     }
+//     .g-logo {
+//         margin-bottom 1rem
+//     }
+//     &__item {
+//         &.active {
+//             position relative
+//             &:before {
+//                 content ''
+//                 position absolute
+//                 display block
+//                 width 1rem
+//                 height 2px
+//                 background-color rgba(#000, 0.1)
+//                 left -1.5rem
+//                 top 50%
+//             }
+//         }
+//         +below(970px){
+//             display inline-block
+//             margin-right 1rem
+//             &.active {
+//                 &:before {
+//                     left 0
+//                     top auto
+//                     bottom 0
+//                 }
+//             }
+//         }
+//     }
+// }
