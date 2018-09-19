@@ -1,9 +1,0 @@
-/* TEAM */                   
-    Author: Stjepan Grgic                                         
-    Twitter: @stjepco   
-    From: Zagreb, Croatia
-
-/* SITE */
-    Language: English
-    Doctype: HTML5
-    Software: Sublime Text 3, Google Chrome, Sketch
