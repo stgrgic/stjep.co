@@ -11,6 +11,7 @@
 <script>
 import logo from '@/components/stjepcoLogo'
 export default {
+  name: 'Navbar',
   components: {
     logo
   }
@@ -33,19 +34,25 @@ export default {
       margin-right 1rem
         
       a {
+        border none
         text-decoration none
         font-size 20px
-        color #1268E6
+        // color #1268E6
         display inline-block
         padding 0.5rem
       }
       &:first-child {
         margin-right 0.5rem
         a {
-          fill #1268E6
+          // fill #1268E6
           padding 0
           margin-right 1rem
         }
+      }
+      .nuxt-link-exact-active {
+        // background-color #aaa
+        color #1268E6
+        fill #1268E6
       }
     }
   }
