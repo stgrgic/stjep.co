@@ -1,7 +1,6 @@
 <template>
   <div class="resume">
     <h2>Resume</h2>
-
     <div class="job" v-for="job in cv.employment" :key="job.id">
       <h3 class="job__name">{{ job.name }}</h3> 
       <p class="job__period">{{ job.period }}</p>
@@ -18,7 +17,6 @@
         <p>{{ project.description }}</p>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -33,9 +31,3 @@ export default {
   }
 }
 </script>
-
-<style lang="stylus">
-.resume {
-  // background-color #aaf
-}
-</style>

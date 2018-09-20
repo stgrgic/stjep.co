@@ -7,7 +7,7 @@
     I am a designer who loves to code, draw, take photos... <br>
     Lately, I’ve been focusing on interaction and experience design. <!-- By working on such projects, I use all my potential and knowledge, and that makes me happy! --></p>
     <h2>Work.</h2>
-    <p>I have worked with startups and business around the world like <a href="">OptimoRoute</a>, <a href="">Memgraph</a>, <a href="">Agrivi</a>, <a href="">vibby</a> and others. For more details, check <a href="">my resume</a>.</p>
+    <p>I have worked with startups and business around the world like <a href="">OptimoRoute</a>, <a href="">Memgraph</a>, <a href="">Agrivi</a>, <a href="">vibby</a> and others. For more details, check <nuxt-link to="/resume">my resume</nuxt-link>.</p>
     <h2>Now...</h2>
     <p>Read more on <a href="">Now page</a> (<a href="">What is now page?</a>). Also, you can find me on <a href="">instagram</a> and <a href="">twitter</a>.</p>
     <h2>Writing</h2>
@@ -29,11 +29,7 @@
 </template>
 
 <script>
-import Resume from '@/components/Resume'
 export default {
-  components: {
-    Resume
-  }
 }
 </script>
 

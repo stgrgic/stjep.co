@@ -3,7 +3,8 @@
     <ul>
       <li><nuxt-link to="/"><logo /></nuxt-link></li>
       <li><nuxt-link to="/about">About</nuxt-link></li>
-      <li><nuxt-link to="/lab">Lab</nuxt-link></li>
+      <li><nuxt-link to="/now">Now</nuxt-link></li>
+      <!-- <li><nuxt-link to="/lab">Lab</nuxt-link></li> -->
     </ul>
   </nav>
 </template>
