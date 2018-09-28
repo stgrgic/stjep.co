@@ -2,8 +2,8 @@
   <nav class="nav">
     <ul>
       <li><nuxt-link to="/"><logo /></nuxt-link></li>
-      <li><nuxt-link to="/about">About</nuxt-link></li>
-      <li><nuxt-link to="/now">Now</nuxt-link></li>
+      <!-- <li><nuxt-link to="/about">About</nuxt-link></li>
+      <li><nuxt-link to="/now">Now</nuxt-link></li> -->
       <!-- <li><nuxt-link to="/lab">Lab</nuxt-link></li> -->
     </ul>
   </nav>
@@ -22,6 +22,7 @@ export default {
 <style lang="stylus">
 .nav {
   margin-top 2rem
+  margin-top 10vh
   margin-bottom 3rem
   ul {
     list-style none
@@ -48,12 +49,21 @@ export default {
           // fill #1268E6
           padding 0
           margin-right 1rem
+          svg {
+            transition all 0.2s ease
+          }
+          &:hover {
+            svg {
+              fill #1268E6
+            }
+          }
+          // fill #1268E6
         }
       }
       .nuxt-link-exact-active {
         // background-color #aaa
-        color #1268E6
-        fill #1268E6
+        // color #1268E6
+        // fill #222
       }
     }
   }

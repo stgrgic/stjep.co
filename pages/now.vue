@@ -1,43 +1,178 @@
 <template>
 	<div class="now">
-		Derek Sivers
-What I’m doing now
-(This is a now page, and if you have your own site, you should make one, too.)
+		<div id="content">
 
-Portugal:
-Tonight I leave for Portugal, where I’ll be staying for six weeks in Cascais and Sintra. My kid is attending an international school there, so we're getting a taste of what it would be like to live there.
+		<section id="aboutme">
+		<p>
+			Yes my site is plain on purpose.
+			It’s my minimalist desire for only what’s needed.
+		</p><p>
+			The world has given me enough.
+			I don’t want more money or fame.
+			I’m just giving back, and trying to live up to my lucky circumstance.
+		</p>
+		<h2>
+			Me in 10 seconds
+		</h2>
+		<p>
+			I’ve been a <a href="/music">musician</a>, <a href="http://artificialrecords.com/">producer</a>, <a href="http://professionalpests.com/">circus performer</a>, <a href="/a">entrepreneur</a>, <a href="/presentations">TED speaker</a>, and <a href="/we14">book publisher</a>.
+		</p><p>
+			I started <a href="https://www.cdbaby.com/">CDBaby</a> and <a href="https://www.hostbaby.com/">HostBaby</a> long ago.
+			My <a href="/a">short audio/book about it</a> tells you everything I learned while starting, growing, and selling the business.
+		</p><p>
+			<a href="http://typelogic.com/intj.html">Introvert</a>,
+			<a href="/slow">slow thinker</a>,
+			and love finding a <a href="/counter">different point of view</a>.
+		</p><p>
+			California native, I now <a href="/local">live</a> in <a href="/singapore">Singapore</a>.
+		</p>
+		<h2>
+			Me in 10 minutes?
+		</h2>
+		<p>
+			See <a href="/about">my “about” page</a>.
+		</p>
+		<h2>
+			What am I doing now?
+		</h2>
+		<p>
+			See <a href="/now">my “now” page</a>.
+		</p>
+		<h2>
+			Contact me?
+		</h2>
+		<p>
+			See <a href="/contact">why you should</a>, though read my <a href="/faq">frequently asked questions</a>, first.
+		</p>
+		</section>
 
-Because of this, my day-to-day “now” will be pretty unpredictable.
+		<section id="mybooks">
+		<h2>Books</h2>
+		<dl>
+			<dt><a href="/a">Anything You Want</a> <span class="small">(2011)</span></dt>
+			<dd>40 lessons for a new kind of entrepreneur: my tales of starting, building, and selling CD Baby</dd>
+			<dt><a href="/m">Your Music and People</a> <span class="small">(2018)</span></dt>
+			<dd>a philosophy for musicians (and normal people) of getting your work to the world by being creative, considerate, resourceful, descriptive, focused, and connected</dd>
+			<dt><a href="/n">Hell Yeah or No</a> <span class="small">(2018)</span></dt>
+			<dd>a collection of thoughts around re-defining yourself, changing focus, and saying yes to less</dd>
+			<dt><a href="/h">How to Live</a> <span class="small">(2018)</span></dt>
+			<dd>radically different approaches to life, in succinct directives</dd>
+		</dl>
+		</section>
 
-Writing:
-My main focus: I’m writing three books this year:
+		<section id="newestarticles">
+		<h2>Newest Articles <small><a href="/blog">see all</a></small></h2>
+		<ul>
+			<li><a href="/contrib">You don’t need confidence, just contribution.</a></li>
+			<li><a href="/unlearning">Unlearning</a></li>
+			<li><a href="/openbsd">OpenBSD 6.3 : why and how</a></li>
+			<li><a href="/bfaq">about my book notes</a></li>
+			<li><a href="/mfg">Moving for good</a></li>
+			<li><a href="/facebook">Why I’m not on Facebook</a></li>
+		</ul>
+		</section>
 
-“Your Music and People” (done)
-“Hell Yeah or No” (doing now)
-“How to Live” (rough draft done)
-I plan to self-publish all of these. Printing hard-cover books, hiring my own translators, illustrators and animators, and selling everything directly from my site. It feels kinda like the independent music movement from 1999-2000 where musicians realized they weren’t beholden to record labels. The idea of not being beholden to Amazon or publishers is exciting. It might mean less income, but that’s worth it to me. It’s more inspiring.
+		<section id="popularposts">
+		<h2>Popular Articles <small><a href="/blog">see all</a></small></h2>
+		<ul>
+			<li><a href="/ff">Leadership Lessons from Dancing Guy</a></li>
+			<li><a href="/hellyeah">No yes. Either HELL YEAH or no.</a></li>
+			<li><a href="/multiply">Ideas are just a multiplier of execution</a></li>
+			<li><a href="/trust">Why I gave away my company to charity</a></li>
+			<li><a href="/local">You don’t have to be local</a></li>
+			<li><a href="/obvious">Obvious to you. Amazing to others.</a></li>
+		</ul>
+		</section>
 
-It’s also a fun programming challenge: building a database and site to manage translations, writing a script to turn my HTML articles into EPUB format, and more.
+		<section id="list">
+		<h2>My private email list</h2>
+		<p>
+		If you want the announcements and opportunities that I never post publicly, get on my private email list, here:
+		</p>
+		<form action="/list" method="post">
+		<label for="name">Your Name</label>
+		<input type="text" name="name" id="name" value="">
+		<label for="email">Your Email (kept private! never shared.)</label>
+		<input type="email" name="email" id="email" value="">
+		<input type="hidden" name="listype" value="all">
+		<br>
+		<input type="submit" name="submit" value="sign up">
+		</form>
+		</section>
 
-I’ve been turning off my internet connection - actually powering off the modem - from 7pm until around noon the next day, so that I can write offline without temptation to research various things that pop into my mind. It helps.
+		<section id="companies">
+		<h2>Projects <small><a href="/projects">see all projects</a></small></h2>
+		<dl>
+			<dt><a href="/book">Book Notes</a></dt>
+			<dd>detailed notes from the last 250+ books I’ve read</dd>
+			<dt><a href="https://nownownow.com/">Now Now Now</a></dt>
+			<dd>a collection of sites that have a “what I’m doing now” page</dd>
+			<dt><a href="https://musicthoughts.com/">MusicThoughts</a></dt>
+			<dd>inspiring quotes about music, translated into Español, Français, Deutsch, Italiano, Português, Русский, العربية, 日本語, and 中文</dd>
+		</dl>
+		</section>
 
-Translators:
-Two months ago, I emailed my private email list, looking for translators to translate my next books into their language. 1500 answered and offered their help. 500 of them offered to do it for free.
+		<section id="videos">
+		<h2>Videos</h2>
+		<dl>
+			<dt><a href="https://www.ted.com/speakers/derek_sivers">TED (ted.com)</a></dt>
+			<dd>3 short talks from the TED Conference.</dd>
+			<dt><a href="/anything">Anything You Want</a></dt>
+			<dd>7 short animations from my book “Anything You Want”.</dd>
+			<dt><a href="/wds">Uncommon Sense</a></dt>
+			<dd>Entrepreneur lessons learned from starting, building, and selling CD Baby.</dd>
+			<dt><a href="/presentations">Conference Presentations</a></dt>
+			<dd>Talks from other conferences, all subjects.</dd>
+		</dl>
+		</section>
 
-So I built a crowd-source kind of translation web app, so many translators, reviewers, and editors can log in and translate my books into their language, sentence-by-sentence. I’ll write about it later, when the first book is done.
+		<section id="interviews">
+		<h2>Interviews</h2>
+		<p>Through 2015, I got personal and poured my heart into <a href="/i">40 hours of interviews</a>.</p>
+		<p>Each one has an MP3 you can download, or a transcript if you prefer to read.</p>
+		</section>
 
-Now 196 translators are translating my next book into 44 languages.
+		<section id="photos">
+		<h2>Photos <small>(click for big)</small></h2>
+		<a href="/images/DerekSivers-20141119-1450.jpg"><img src="/images/DerekSivers-20141119-100.jpg" alt="Derek Sivers" title="© 2014 Derek Sivers"></a>
+		<a href="/images/DerekSivers-20141209a-1853.jpg"><img src="/images/DerekSivers-20141209a-100.jpg" alt="Derek Sivers" title="© 2014 Pat Shepherd - patshepherd.co.nz"></a>
+		<a href="/images/DerekSivers-20141209b-2333.jpg"><img src="/images/DerekSivers-20141209b-100.jpg" alt="Derek Sivers" title="© 2014 Pat Shepherd - patshepherd.co.nz"></a>
+		<a href="/images/DerekSivers-20141209c-1556.jpg"><img src="/images/DerekSivers-20141209c-100.jpg" alt="Derek Sivers" title="© 2014 Pat Shepherd - patshepherd.co.nz"></a>
+		</section>
 
-So it’s been a really intense few months, first building the app and now emailing with all the translators.
+		<section id="tweets">
+		<h2>Tweets <small><a href="/tweets">see all tweets</a></small></h2>
+		<dl id="tweetlist">
+			<dt class="small">September 8</dt>
+			<dd>The code to my sites and database are now mirrored on GitHub: <a href="https://github.com/sivers">https://github.com/sivers</a>  Use anything you like.</dd>
+			<dt class="small">August 6</dt>
+			<dd>You don't need confidence, just contribution. <a href="https://sivers.org/contrib">https://sivers.org/contrib</a></dd>
+			<dt class="small">August 2</dt>
+			<dd>My definition of success: <a href="http://grantpirosblog.com/a-definition-of-success/">http://grantpirosblog.com/a-definition-of-success/</a> (thanks to Grant Piros for putting it succinctly)</dd>
+			<dt class="small">July 25</dt>
+			<dd>New notes on four great books: <a href="https://sivers.org/book">https://sivers.org/book</a> - especially “Story of Philosophy” and “Courage to be Disliked”.</dd>
+			<dt class="small">June 18</dt>
+			<dd>Imagining a band: John Bonham, Jaco Pastorius, Bill Evans, Michael Hedges, and Björk, produced by Brian Eno.</dd>
+			<dt class="small">June 7</dt>
+			<dd>Unlearning : <a href="https://sivers.org/unlearning">https://sivers.org/unlearning</a></dd>
+		</dl>
+		<p>
+			(<a href="https://micro.blog/sivers">micro.blog/sivers</a> is a nice mirror of my posts.)
+		</p>
+		</section>
 
-Health:
-In the last few months, I’ve gone from 100kg (220lbs) to 80kg (178lbs). It’s about the only time in my life I’ve ever lost weight. It feels great. For my height (175cm) I should be about 70kg (155lbs). Kick my ass if I don’t, OK?
+		<section id="search">
+		<h2>Search</h2>
+		<form action="https://duckduckgo.com/" method="get">
+			<label for="q">Search sivers.org for anything:</label>
+			<input type="text" name="q" value="">
+			<input type="hidden" name="sites" value="sivers.org">
+			<input type="hidden" name="ia" value="web">
+			<input type="submit" value="search">
+		</form>
+		</section>
 
-No to everything else
-(See “saying no to everything else” for more thoughts on this.) I still get requests to do public speaking and interviews and such, but I’m just enjoying staying focused inward on my writing and learning, instead of shallow crowd-pleasing.
 
-I don’t want more money or more fame. Just more focused learning and creative output.
-
-This update was August 30th, 2018.
+		</div>
 	</div>
 </template>
