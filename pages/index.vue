@@ -13,7 +13,7 @@
     <h2>Writing</h2>
     <ul>
       <!-- <li><a href="">Misfit Designer</a></li> -->
-      <li>Designer's Road <a href="">(Archive)</a>.<!--<a href="">What happened?</a>--></li> 
+      <li>Designer's Road <a href="https://designersroad.netlify.com">(Archive)</a>.<!--<a href="">What happened?</a>--></li> 
     </ul>
 <!--     <div class="stupid-projects">
       <h2>Simple stupid projects</h2>
@@ -67,7 +67,7 @@ $purple = #550088
       color $text
       border-bottom 1px solid $text
       text-decoration: none;
-      transition: all 0.2s ease;
+      // transition: all 0.2s ease;
       padding-bottom 1px
       &:hover {
         color: $blue;
