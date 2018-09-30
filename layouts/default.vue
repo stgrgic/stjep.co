@@ -24,12 +24,31 @@
 
 <style lang="stylus">
 
+$text = #000
+$blue = #2470DF
+$purple = #550088
+
 body {
   color #000
   padding-bottom 3rem
 }
 a {
   color inherit
+}
+a {
+  color $text
+  border-bottom 1px solid $text
+  text-decoration: none;
+  // transition: all 0.2s ease;
+  padding-bottom 1px
+  &:hover {
+    color: $blue;
+    border-bottom 3px solid $blue
+  }
+  // &:visited {
+  //   color: $purple;
+  //   border-bottom 3px solid $purple
+  // }
 }
 
 

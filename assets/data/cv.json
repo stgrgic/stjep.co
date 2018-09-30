@@ -1,6 +1,19 @@
 {
     "employment": [
         {
+            "name": "OptimoRoute",
+            "position": "Lead UX Designer",
+            "period": "August 2017 - present",
+            "url": "https://optimoroute.com/",
+            "id": "optimoroute",
+            "introduction": "I have started underlayer studio with hopes I will be able to run a business all by myself. I worked on a few nice projects. But, it was a tough year. I learned a lot. I saw how business requires a lot of effort so now I can appreciate business people much more.",
+            "learned": [
+                "How starting my own company looks like.",
+                "How to run my own company looks like, and how that can be hard.",
+                "How to better organise myself."
+            ]
+        },
+        {
             "name": "Underlayer",
             "position": "Founder, designer and developer",
             "period": "January 2016 - present",
@@ -106,33 +119,39 @@
         "formal": [
             {
                 "name": "University of Zagreb - Faculty of Graphic Arts, Croatia",
-                "period": "2010 - 2013"
+                "period": "2010 - 2013",
+                "id": "grf"
             },
             {
                 "name": "Natural sciences & mathematics gymnasium in Požega, Croatia",
-                "period": "2006 - 2010"
+                "period": "2006 - 2010",
+                "id": "gim"
             }
         ],
         "courses": [
             {
-                "name": "Coursera - Human computer interaction",
-                "year": "2012"
+                "name": "Human-Centered Design",
+                "info": "2014, Coursera"
             },
             {
-                "name": "Coursera - Design: Creation of Artifacts in Society",
-                "year": "2013"
+                "name": "Design: Creation of Artifacts in Society",
+                "info": "2013, Coursera"
             },
             {
-                "name": "Coursera - Introductory Human Physiology",
-                "year": "2013"
+                "name": "Introductory Human Physiology",
+                "info": "2013, Coursera"
             },
             {
-                "name": "Coursera - Gamification",
-                "year": "2013"
+                "name": "Gamification",
+                "info": "2013, Coursera"
             },
             {
-                "name": "Coursera - A Beginner’s Guide to Irrational Behavior",
-                "year": "2013"
+                "name": "A Beginner’s Guide to Irrational Behavior",
+                "info": "2013, Coursera"
+            },
+            {
+                "name": "Human computer interaction",
+                "info": "2012, Coursera"
             }
         ]
     },
@@ -145,10 +164,10 @@
         }
     ],
     "skills": [
-        "Design with a focus on user experience and interactions using Sketch and Photoshop.",
-        "Prototyping with InVision, Balsamiq mockups and Framer JS.",
-        "Front-end development with strong orientation on semantic HTML and CSS (Stylus, SCSS) architecture.",
+        "Web & Mobile app design with a focus on user experience and interactions using Sketch and Photoshop.",
+        "Front-end development with strong orientation on semantic HTML and CSS architecture.",
         "JavaScript - junior, but learning and growing every day.",
+        "Prototyping with InVision, Balsamiq mockups and Framer JS.",
         "Comfortable using terminal,  git and phabricator.",
         "Illustration and drawing artisan.",
         "Photography geek.",
